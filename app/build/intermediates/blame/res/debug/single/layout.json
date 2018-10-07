@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "/home/piotr/develop/MotivProjects/XapoTest/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/row_user.xml",
+        "source": "/home/piotr/develop/MotivProjects/XapoTest/app/src/main/res/layout/row_user.xml"
+    },
+    {
+        "merged": "/home/piotr/develop/MotivProjects/XapoTest/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/fragment_list.xml",
+        "source": "/home/piotr/develop/MotivProjects/XapoTest/app/src/main/res/layout/fragment_list.xml"
+    },
+    {
+        "merged": "/home/piotr/develop/MotivProjects/XapoTest/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/fragment_details.xml",
+        "source": "/home/piotr/develop/MotivProjects/XapoTest/app/src/main/res/layout/fragment_details.xml"
+    }
+]
