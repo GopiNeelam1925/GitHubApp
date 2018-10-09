@@ -28,9 +28,9 @@ public class MyRoomDatabase_Impl extends MyRoomDatabase {
     final SupportSQLiteOpenHelper.Callback _openCallback = new RoomOpenHelper(configuration, new RoomOpenHelper.Delegate(1) {
       @Override
       public void createAllTables(SupportSQLiteDatabase _db) {
-        _db.execSQL("CREATE TABLE IF NOT EXISTS `repository` (`url` TEXT NOT NULL, `name` TEXT NOT NULL, `author` TEXT NOT NULL, `description` TEXT NOT NULL, `language` TEXT NOT NULL, `stars` INTEGER NOT NULL, `forks` INTEGER NOT NULL, `currentPeriodStars` INTEGER NOT NULL, PRIMARY KEY(`url`))");
+        _db.execSQL("CREATE TABLE IF NOT EXISTS `repository` (`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `name` TEXT NOT NULL, `url` TEXT NOT NULL, `author` TEXT NOT NULL, `description` TEXT NOT NULL, `language` TEXT NOT NULL, `stars` INTEGER NOT NULL, `forks` INTEGER NOT NULL, `currentPeriodStars` INTEGER NOT NULL)");
         _db.execSQL("CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)");
-        _db.execSQL("INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, \"de626ced2bd3e8b064bfb1e650e5532f\")");
+        _db.execSQL("INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, \"c8a128f777f431784afad4353042f93a\")");
       }
 
       @Override
@@ -60,9 +60,10 @@ public class MyRoomDatabase_Impl extends MyRoomDatabase {
 
       @Override
       protected void validateMigration(SupportSQLiteDatabase _db) {
-        final HashMap<String, TableInfo.Column> _columnsRepository = new HashMap<String, TableInfo.Column>(8);
-        _columnsRepository.put("url", new TableInfo.Column("url", "TEXT", true, 1));
+        final HashMap<String, TableInfo.Column> _columnsRepository = new HashMap<String, TableInfo.Column>(9);
+        _columnsRepository.put("id", new TableInfo.Column("id", "INTEGER", true, 1));
         _columnsRepository.put("name", new TableInfo.Column("name", "TEXT", true, 0));
+        _columnsRepository.put("url", new TableInfo.Column("url", "TEXT", true, 0));
         _columnsRepository.put("author", new TableInfo.Column("author", "TEXT", true, 0));
         _columnsRepository.put("description", new TableInfo.Column("description", "TEXT", true, 0));
         _columnsRepository.put("language", new TableInfo.Column("language", "TEXT", true, 0));
@@ -79,7 +80,7 @@ public class MyRoomDatabase_Impl extends MyRoomDatabase {
                   + " Found:\n" + _existingRepository);
         }
       }
-    }, "de626ced2bd3e8b064bfb1e650e5532f", "ae2ee6ac3f1c396485cd58b2b411301f");
+    }, "c8a128f777f431784afad4353042f93a", "6b89aa25de28a3688427ef521669be16");
     final SupportSQLiteOpenHelper.Configuration _sqliteConfig = SupportSQLiteOpenHelper.Configuration.builder(configuration.context)
         .name(configuration.name)
         .callback(_openCallback)

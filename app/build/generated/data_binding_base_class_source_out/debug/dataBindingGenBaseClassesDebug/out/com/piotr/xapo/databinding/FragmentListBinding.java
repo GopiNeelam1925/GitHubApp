@@ -6,6 +6,7 @@ import android.databinding.ViewDataBinding;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.design.widget.AppBarLayout;
+import android.support.v4.widget.SwipeRefreshLayout;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
 import android.view.LayoutInflater;
@@ -31,17 +32,22 @@ public abstract class FragmentListBinding extends ViewDataBinding {
   public final RecyclerView recyclerview10;
 
   @NonNull
+  public final SwipeRefreshLayout swipeToRefresh;
+
+  @NonNull
   public final Toolbar toolbar;
 
   protected FragmentListBinding(DataBindingComponent _bindingComponent, View _root,
       int _localFieldCount, AppBarLayout appbar, ProgressBar bar, RelativeLayout errorLayout,
-      RelativeLayout linearlayout00, RecyclerView recyclerview10, Toolbar toolbar) {
+      RelativeLayout linearlayout00, RecyclerView recyclerview10, SwipeRefreshLayout swipeToRefresh,
+      Toolbar toolbar) {
     super(_bindingComponent, _root, _localFieldCount);
     this.appbar = appbar;
     this.bar = bar;
     this.errorLayout = errorLayout;
     this.linearlayout00 = linearlayout00;
     this.recyclerview10 = recyclerview10;
+    this.swipeToRefresh = swipeToRefresh;
     this.toolbar = toolbar;
   }
 

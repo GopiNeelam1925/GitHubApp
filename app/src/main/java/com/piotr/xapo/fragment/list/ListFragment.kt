@@ -8,6 +8,7 @@ import android.os.Bundle
 import javax.inject.Inject
 import android.support.v7.widget.LinearLayoutManager
 import android.support.v4.app.Fragment
+import android.support.v4.widget.SwipeRefreshLayout
 import android.support.v7.app.AppCompatActivity
 import android.support.v7.widget.DividerItemDecoration
 import android.support.v7.widget.RecyclerView
@@ -48,18 +49,8 @@ public class ListFragment : Fragment(), Contract.View {
         binding.recyclerview10.addItemDecoration(DividerItemDecoration(context, LinearLayoutManager.VERTICAL))
         binding.recyclerview10.layoutManager = LinearLayoutManager(context) as RecyclerView.LayoutManager
         binding.recyclerview10.adapter = adapterRepositorys
-        adapterRepositorys.setOnItemClickListener(object : AdapterRepositories.OnItemClickListener {
-            override fun onItemClick(position: Int, item: Repository, image: View) {
-                openDetailsScreen(item, image)
-            }
-        })
 
-        binding.errorLayout.setOnClickListener {
-            binding.errorLayout.visibility = View.GONE
-            presenter.loadData()
-        }
-
-        presenter.loadData()
+        presenter.attach()
         initialized = true
         return binding.root
 
@@ -73,11 +64,20 @@ public class ListFragment : Fragment(), Contract.View {
         adapterRepositorys.setOnItemClickListener(onItemClickListener = onClickListener)
     }
 
+    override fun setOnErrorLayoutClickListener(onClickListener: View.OnClickListener) {
+        binding.errorLayout.setOnClickListener(onClickListener)
+    }
+
+    override fun setSwipeToRefreshListener(swipeToRefreshListener: SwipeRefreshLayout.OnRefreshListener) {
+        binding.swipeToRefresh.setOnRefreshListener(swipeToRefreshListener)
+    }
+
     override fun openDetailsScreen(Repository: Repository, image: View) {
         (activity as NavigationInterface).openDetailsFragment(Repository, image)
     }
 
     override fun hideProgress() {
+        binding.swipeToRefresh.isRefreshing = false
         binding.bar.visibility = View.GONE
     }
 
@@ -88,5 +88,10 @@ public class ListFragment : Fragment(), Contract.View {
     override fun onNoDataFetched() {
         binding.errorLayout.visibility = View.VISIBLE
     }
+
+    override fun hideOnErrorLayout() {
+        binding.errorLayout.visibility = View.GONE
+    }
+
 }
                 

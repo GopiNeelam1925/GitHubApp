@@ -7,6 +7,9 @@ public final class DaoRepository {
     @org.jetbrains.annotations.NotNull()
     private final com.piotr.xapo.dao.MyRoomDatabase myRoomDatabase = null;
     
+    /**
+     * * Because trending repositories changes often we don`t store them permanently.
+     */
     @org.jetbrains.annotations.NotNull()
     public final io.reactivex.Observable<java.util.List<com.piotr.xapo.model.Repository>> saveRepositories(@org.jetbrains.annotations.NotNull()
     java.util.List<com.piotr.xapo.model.Repository> repositories) {

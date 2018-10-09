@@ -16,9 +16,10 @@ public class FragmentListBindingImpl extends FragmentListBinding  {
         sViewsWithIds = new android.util.SparseIntArray();
         sViewsWithIds.put(R.id.appbar, 1);
         sViewsWithIds.put(R.id.toolbar, 2);
-        sViewsWithIds.put(R.id.recyclerview10, 3);
-        sViewsWithIds.put(R.id.bar, 4);
-        sViewsWithIds.put(R.id.error_layout, 5);
+        sViewsWithIds.put(R.id.swipe_to_refresh, 3);
+        sViewsWithIds.put(R.id.recyclerview10, 4);
+        sViewsWithIds.put(R.id.bar, 5);
+        sViewsWithIds.put(R.id.error_layout, 6);
     }
     // views
     // variables
@@ -27,15 +28,16 @@ public class FragmentListBindingImpl extends FragmentListBinding  {
     // Inverse Binding Event Handlers
 
     public FragmentListBindingImpl(@Nullable android.databinding.DataBindingComponent bindingComponent, @NonNull View root) {
-        this(bindingComponent, root, mapBindings(bindingComponent, root, 6, sIncludes, sViewsWithIds));
+        this(bindingComponent, root, mapBindings(bindingComponent, root, 7, sIncludes, sViewsWithIds));
     }
     private FragmentListBindingImpl(android.databinding.DataBindingComponent bindingComponent, View root, Object[] bindings) {
         super(bindingComponent, root, 0
             , (android.support.design.widget.AppBarLayout) bindings[1]
-            , (android.widget.ProgressBar) bindings[4]
-            , (android.widget.RelativeLayout) bindings[5]
+            , (android.widget.ProgressBar) bindings[5]
+            , (android.widget.RelativeLayout) bindings[6]
             , (android.widget.RelativeLayout) bindings[0]
-            , (android.support.v7.widget.RecyclerView) bindings[3]
+            , (android.support.v7.widget.RecyclerView) bindings[4]
+            , (android.support.v4.widget.SwipeRefreshLayout) bindings[3]
             , (android.support.v7.widget.Toolbar) bindings[2]
             );
         this.linearlayout00.setTag(null);

@@ -19,4 +19,10 @@ public interface RepositoryDao {
     @Insert(onConflict = OnConflictStrategy.REPLACE)
     public fun saveRepositories(user: List<Repository>)
 
+    @Query("DELETE FROM repository")
+    public fun deleteRepositories()
+
+
+
+
 }

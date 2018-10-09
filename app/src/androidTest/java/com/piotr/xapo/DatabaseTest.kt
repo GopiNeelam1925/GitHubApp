@@ -36,14 +36,16 @@ public class DatabaseTest {
     @Test
     @Throws(Exception::class)
     fun writeUserAndReadInList() {
-        val user = Repository("login",
+        val user = Repository(0,
+
                 "node_id",
                 "avatar_url",
                 "gravatar_url",
                 "url",
-                1,
+                "test",
                 2,
-                3)
+                3,
+                2)
         val users = ArrayList<Repository>()
         users.add(user)
         repositoryDao!!.saveRepositories(users)

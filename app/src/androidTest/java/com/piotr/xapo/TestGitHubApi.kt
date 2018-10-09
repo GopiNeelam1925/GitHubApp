@@ -1,6 +1,5 @@
 package com.piotr.xapo
 
-import android.util.Log
 import com.piotr.xapo.api.GitHubApi
 import com.piotr.xapo.model.Repository
 import io.reactivex.Observable
@@ -13,6 +12,7 @@ public class TestGitHubApi : GitHubApi() {
         private var instance: TestGitHubApi? = null
         fun getInstance(): GitHubApi = instance ?: TestGitHubApi()
     }
+
 
     override fun getRepositories(): Observable<List<Repository>> {
         val data = TestValues.getTestRepositories()

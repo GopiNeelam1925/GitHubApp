@@ -8,23 +8,12 @@ import io.reactivex.schedulers.Schedulers
 
 public class DaoRepository(val myRoomDatabase: MyRoomDatabase) {
 
-    /*
-    fun saveUsers(users: List<User>): Observable<List<User>> =
-            Observable.create(ObservableOnSubscribe<List<User>> { emitter ->
-                myRoomDatabase.userDao().saveUsers(users)
-                emitter.onNext(users)
-            })
-                    .subscribeOn(Schedulers.io())
-                    .observeOn(AndroidSchedulers.mainThread())
-
-
-    fun loadUsers(): Observable<List<User>> =
-            Observable.create(ObservableOnSubscribe<List<User>> { emitter -> emitter.onNext(myRoomDatabase.userDao().getUsers()) })
-                    .subscribeOn(Schedulers.io())
-                    .observeOn(AndroidSchedulers.mainThread())
-   */
+    /**
+     * Because trending repositories changes often we don`t store them permanently.
+     */
     fun saveRepositories(repositories: List<Repository>): Observable<List<Repository>> =
             Observable.create(ObservableOnSubscribe<List<Repository>> { emitter ->
+                myRoomDatabase.repositoryDao().deleteRepositories()
                 myRoomDatabase.repositoryDao().saveRepositories(repositories)
                 emitter.onNext(repositories)
             })
