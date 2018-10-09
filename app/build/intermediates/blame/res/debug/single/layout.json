@@ -8,10 +8,6 @@
         "source": "/home/piotr/develop/AndroidStudioProjects/GitHubApp/app/src/main/res/layout/fragment_list.xml"
     },
     {
-        "merged": "/home/piotr/develop/AndroidStudioProjects/GitHubApp/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/row_user.xml",
-        "source": "/home/piotr/develop/AndroidStudioProjects/GitHubApp/app/src/main/res/layout/row_user.xml"
-    },
-    {
         "merged": "/home/piotr/develop/AndroidStudioProjects/GitHubApp/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/row_repository.xml",
         "source": "/home/piotr/develop/AndroidStudioProjects/GitHubApp/app/src/main/res/layout/row_repository.xml"
     }

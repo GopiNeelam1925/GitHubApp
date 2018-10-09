@@ -14,6 +14,7 @@
 
 
     <android.support.design.widget.CoordinatorLayout
+        android:id="@+id/details_root"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@android:color/white">
@@ -77,6 +78,7 @@
                     android:textSize="12sp" />
 
                 <TextView
+                    android:id="@+id/tv_author"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:padding="10dp"
@@ -97,6 +99,7 @@
                     android:textSize="12sp" />
 
                 <TextView
+                    android:id="@+id/tv_url"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:autoLink="web"
@@ -119,6 +122,7 @@
                     android:textSize="12sp" />
 
                 <TextView
+                    android:id="@+id/tv_period_stars"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:autoLink="web"
@@ -140,6 +144,7 @@
                     android:textSize="12sp" />
 
                 <TextView
+                    android:id="@+id/tv_forks"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:autoLink="web"
@@ -161,6 +166,7 @@
                     android:textSize="12sp" />
 
                 <TextView
+                    android:id="@+id/tv_language"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:autoLink="web"
@@ -182,6 +188,7 @@
                     android:textSize="12sp" />
 
                 <TextView
+                    android:id="@+id/tv_image_url"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:autoLink="web"
@@ -203,6 +210,7 @@
                     android:textSize="12sp" />
 
                 <TextView
+                    android:id="@+id/tv_stars"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:autoLink="web"

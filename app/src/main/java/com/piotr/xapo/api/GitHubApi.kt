@@ -24,7 +24,7 @@ public open class GitHubApi {
 
         val gson: Gson = GsonBuilder().setDateFormat("yyyy-MM-dd'T'HH:mm:ssZ").create()
         val retrofit: Retrofit = Retrofit.Builder()
-                .baseUrl("    https://github-trending-api.now.sh/")
+                .baseUrl("https://github-trending-api.now.sh/")
                 .client(client)
                 .addConverterFactory(GsonConverterFactory.create(gson))
                 .addCallAdapterFactory(RxJava2CallAdapterFactory.create())

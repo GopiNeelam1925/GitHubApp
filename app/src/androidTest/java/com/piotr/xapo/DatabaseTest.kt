@@ -5,6 +5,8 @@ import android.arch.persistence.room.Room
 import android.support.test.InstrumentationRegistry
 import android.support.test.runner.AndroidJUnit4
 import com.piotr.xapo.dao.MyRoomDatabase
+import com.piotr.xapo.dao.RepositoryDao
+import com.piotr.xapo.model.Repository
 import org.junit.Before
 import org.junit.Assert.*
 import org.junit.Test
@@ -15,14 +17,14 @@ import java.io.IOException
 public class DatabaseTest {
 
 
-    var mUserDao: UserDao? = null
+    var repositoryDao: RepositoryDao? = null
     var mDb: MyRoomDatabase? = null
 
     @Before
     fun createDb() {
         val context = InstrumentationRegistry.getTargetContext()
         mDb = Room.inMemoryDatabaseBuilder(context, MyRoomDatabase::class.java).build()
-        mUserDao = mDb!!.userDao()
+        repositoryDao = mDb!!.repositoryDao()
     }
 
     @After
@@ -34,31 +36,21 @@ public class DatabaseTest {
     @Test
     @Throws(Exception::class)
     fun writeUserAndReadInList() {
-        val user = User("login",
-                0.1f,
+        val user = Repository("login",
                 "node_id",
                 "avatar_url",
                 "gravatar_url",
                 "url",
-                "html",
-                "followers",
-                "following",
-                "gists",
-                "starred",
-                "subscriptons",
-                "organisations",
-                "repos",
-                "events",
-                "received",
-                "type",
-                true)
-        val users = ArrayList<User>()
+                1,
+                2,
+                3)
+        val users = ArrayList<Repository>()
         users.add(user)
-        mUserDao!!.saveUsers(users)
+        repositoryDao!!.saveRepositories(users)
 
-        val loadedUsers = mUserDao!!.getUsers()
-        assert(loadedUsers.isNotEmpty())
-        assertEquals(users.size, loadedUsers.size)
+        val repositoriesLoaded = repositoryDao!!.getRepositories()
+        assert(repositoriesLoaded.isNotEmpty())
+        assertEquals(users.size, repositoriesLoaded.size)
     }
 
 }

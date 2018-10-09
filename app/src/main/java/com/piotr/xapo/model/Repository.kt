@@ -7,10 +7,10 @@ import java.io.Serializable
 
 @Entity(tableName = "repository")
 data class Repository(
-        @PrimaryKey(autoGenerate = true) var id: Int,
-        @SerializedName("author") val author: String,
-        @SerializedName("name") val name: String,
+        @PrimaryKey
         @SerializedName("url") val url: String,
+        @SerializedName("name") val name: String,
+        @SerializedName("author") val author: String,
         @SerializedName("description") val description: String,
         @SerializedName("language") val language: String,
         @SerializedName("stars") val stars: Int,

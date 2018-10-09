@@ -2,73 +2,43 @@ package com.piotr.xapo
 
 import com.google.gson.Gson
 import com.google.gson.reflect.TypeToken
+import com.piotr.xapo.model.Repository
 
 object TestValues {
-    val testResponse: String = "[\n" +
-            "  {\n" +
-            "    \"login\": \"mojombo\",\n" +
-            "    \"id\": 1,\n" +
-            "    \"node_id\": \"MDQ6VXNlcjE=\",\n" +
-            "    \"avatar_url\": \"https://avatars0.githubusercontent.com/u/1?v=4\",\n" +
-            "    \"gravatar_id\": \"\",\n" +
-            "    \"url\": \"https://api.github.com/users/mojombo\",\n" +
-            "    \"html_url\": \"https://github.com/mojombo\",\n" +
-            "    \"followers_url\": \"https://api.github.com/users/mojombo/followers\",\n" +
-            "    \"following_url\": \"https://api.github.com/users/mojombo/following{/other_user}\",\n" +
-            "    \"gists_url\": \"https://api.github.com/users/mojombo/gists{/gist_id}\",\n" +
-            "    \"starred_url\": \"https://api.github.com/users/mojombo/starred{/owner}{/repo}\",\n" +
-            "    \"subscriptions_url\": \"https://api.github.com/users/mojombo/subscriptions\",\n" +
-            "    \"organizations_url\": \"https://api.github.com/users/mojombo/orgs\",\n" +
-            "    \"repos_url\": \"https://api.github.com/users/mojombo/repos\",\n" +
-            "    \"events_url\": \"https://api.github.com/users/mojombo/events{/privacy}\",\n" +
-            "    \"received_events_url\": \"https://api.github.com/users/mojombo/received_events\",\n" +
-            "    \"type\": \"User\",\n" +
-            "    \"site_admin\": false\n" +
-            "  },\n" +
-            "  {\n" +
-            "    \"login\": \"defunkt\",\n" +
-            "    \"id\": 2,\n" +
-            "    \"node_id\": \"MDQ6VXNlcjI=\",\n" +
-            "    \"avatar_url\": \"https://avatars0.githubusercontent.com/u/2?v=4\",\n" +
-            "    \"gravatar_id\": \"\",\n" +
-            "    \"url\": \"https://api.github.com/users/defunkt\",\n" +
-            "    \"html_url\": \"https://github.com/defunkt\",\n" +
-            "    \"followers_url\": \"https://api.github.com/users/defunkt/followers\",\n" +
-            "    \"following_url\": \"https://api.github.com/users/defunkt/following{/other_user}\",\n" +
-            "    \"gists_url\": \"https://api.github.com/users/defunkt/gists{/gist_id}\",\n" +
-            "    \"starred_url\": \"https://api.github.com/users/defunkt/starred{/owner}{/repo}\",\n" +
-            "    \"subscriptions_url\": \"https://api.github.com/users/defunkt/subscriptions\",\n" +
-            "    \"organizations_url\": \"https://api.github.com/users/defunkt/orgs\",\n" +
-            "    \"repos_url\": \"https://api.github.com/users/defunkt/repos\",\n" +
-            "    \"events_url\": \"https://api.github.com/users/defunkt/events{/privacy}\",\n" +
-            "    \"received_events_url\": \"https://api.github.com/users/defunkt/received_events\",\n" +
-            "    \"type\": \"User\",\n" +
-            "    \"site_admin\": true\n" +
-            "  },\n" +
-            "  {\n" +
-            "    \"login\": \"pjhyett\",\n" +
-            "    \"id\": 3,\n" +
-            "    \"node_id\": \"MDQ6VXNlcjM=\",\n" +
-            "    \"avatar_url\": \"https://avatars0.githubusercontent.com/u/3?v=4\",\n" +
-            "    \"gravatar_id\": \"\",\n" +
-            "    \"url\": \"https://api.github.com/users/pjhyett\",\n" +
-            "    \"html_url\": \"https://github.com/pjhyett\",\n" +
-            "    \"followers_url\": \"https://api.github.com/users/pjhyett/followers\",\n" +
-            "    \"following_url\": \"https://api.github.com/users/pjhyett/following{/other_user}\",\n" +
-            "    \"gists_url\": \"https://api.github.com/users/pjhyett/gists{/gist_id}\",\n" +
-            "    \"starred_url\": \"https://api.github.com/users/pjhyett/starred{/owner}{/repo}\",\n" +
-            "    \"subscriptions_url\": \"https://api.github.com/users/pjhyett/subscriptions\",\n" +
-            "    \"organizations_url\": \"https://api.github.com/users/pjhyett/orgs\",\n" +
-            "    \"repos_url\": \"https://api.github.com/users/pjhyett/repos\",\n" +
-            "    \"events_url\": \"https://api.github.com/users/pjhyett/events{/privacy}\",\n" +
-            "    \"received_events_url\": \"https://api.github.com/users/pjhyett/received_events\",\n" +
-            "    \"type\": \"User\",\n" +
-            "    \"site_admin\": false\n" +
-            "  }]"
+    val testResponse: String = "[{  \n" +
+            "      \"author\":\"saket\",\n" +
+            "      \"name\":\"FluidKeyboardResize\",\n" +
+            "      \"url\":\"https://github.com/saket/FluidKeyboardResize\",\n" +
+            "      \"description\":\"Smoothly reacting to keyboard visibility changes\",\n" +
+            "      \"language\":\"Kotlin\",\n" +
+            "      \"stars\":257,\n" +
+            "      \"forks\":12,\n" +
+            "      \"currentPeriodStars\":60\n" +
+            "   },\n" +
+            "   {  \n" +
+            "      \"author\":\"SchibstedSpain\",\n" +
+            "      \"name\":\"Protein\",\n" +
+            "      \"url\":\"https://github.com/SchibstedSpain/Protein\",\n" +
+            "      \"description\":\"\uD83D\uDC8A Protein is a Kotlin code generator for Retrofit 2 and RxJava 2 based on Swagger\",\n" +
+            "      \"language\":\"Kotlin\",\n" +
+            "      \"stars\":117,\n" +
+            "      \"forks\":2,\n" +
+            "      \"currentPeriodStars\":40\n" +
+            "   },\n" +
+            "   {  \n" +
+            "      \"author\":\"shadowsocks\",\n" +
+            "      \"name\":\"shadowsocks-android\",\n" +
+            "      \"url\":\"https://github.com/shadowsocks/shadowsocks-android\",\n" +
+            "      \"description\":\"A shadowsocks client for Android\",\n" +
+            "      \"language\":\"Kotlin\",\n" +
+            "      \"stars\":18080,\n" +
+            "      \"forks\":7641,\n" +
+            "      \"currentPeriodStars\":30\n" +
+            "   }]"
 
 
-    fun getTestUsers(): List<User>{
-        val usersType = object : TypeToken<List<User>>() {}.type
-        return Gson().fromJson<List<User>>(testResponse, usersType)
+    fun getTestRepositories(): List<Repository> {
+        val RepositorysType = object : TypeToken<List<Repository>>() {}.type
+        return Gson().fromJson<List<Repository>>(testResponse, RepositorysType)
     }
 }
