@@ -1,6 +1,7 @@
 package com.piotr.xapo.fragment.list
 
 import android.support.v4.widget.SwipeRefreshLayout
+import android.util.Log
 import android.view.View
 import com.piotr.xapo.adapter.AdapterRepositories
 import com.piotr.xapo.api.GitHubApi
@@ -17,33 +18,14 @@ public class ListPresenter @Inject constructor(
 
     override fun attach() {
         super.attach()
-        view.setAdapterOnClickListener(object : AdapterRepositories.OnItemClickListener {
-            override fun onItemClick(position: Int, item: Repository, image: View) {
-                view.openDetailsScreen(item, image)
-            }
-        })
-
-        view.setOnErrorLayoutClickListener(object : View.OnClickListener {
-            override fun onClick(v: View?) {
-                view.hideOnErrorLayout()
-                view.showProgress()
-                loadData()
-            }
-        })
-
-        view.setSwipeToRefreshListener(object : SwipeRefreshLayout.OnRefreshListener {
-            override fun onRefresh() {
-                loadData()
-            }
-        })
         view.showProgress()
         loadData()
     }
 
-    private fun setData(Repositorys: List<Repository>) {
+    private fun setData(repositories: List<Repository>) {
         view.hideProgress()
-        view.setAdapterData(Repositorys)
-        if (Repositorys.size == 0) {
+        view.setAdapterData(repositories)
+        if (repositories.size == 0) {
             view.onNoDataFetched()
         }
     }
@@ -61,9 +43,27 @@ public class ListPresenter @Inject constructor(
     }
 
     override fun loadData() {
+        System.out.println("api " + gitHubApi)
+        System.out.println("repositories  " + gitHubApi.getRepositories())
+
         subscribe(gitHubApi.getRepositories().subscribe(
                 { result -> storeData(result) },
                 { error -> restoreData() }
         ))
     }
+
+    override fun onRecyclerViewItemClick(item: Repository, image: View) {
+        view.openDetailsScreen(item, image)
+    }
+
+    override fun onErrorLayoutClicked() {
+        view.hideOnErrorLayout()
+        view.showProgress()
+        loadData()
+    }
+
+    override fun onSwipeRefresh() {
+        loadData()
+    }
+
 }

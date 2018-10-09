@@ -7,10 +7,7 @@ import com.piotr.xapo.model.Repository
 
 public open interface Contract {
     interface View {
-        fun setAdapterData(Repositorys: List<Repository>)
-        fun setAdapterOnClickListener(onClickListener: AdapterRepositories.OnItemClickListener)
-        fun setOnErrorLayoutClickListener(onClickListener: android.view.View.OnClickListener)
-        fun setSwipeToRefreshListener(swipeToRefreshListener: SwipeRefreshLayout.OnRefreshListener)
+        fun setAdapterData(repositories: List<Repository>)
         fun openDetailsScreen(Repository: Repository, image: android.view.View)
         fun showProgress()
         fun hideProgress()
@@ -21,6 +18,10 @@ public open interface Contract {
     interface Presenter : BaseContract.Presenter {
         fun loadData()
         fun restoreData()
+        fun onRecyclerViewItemClick(item: Repository, image: android.view.View)
+        fun onErrorLayoutClicked()
+        fun onSwipeRefresh()
+
 
     }
 }

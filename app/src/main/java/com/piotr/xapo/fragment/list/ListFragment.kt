@@ -21,7 +21,7 @@ import com.piotr.xapo.model.Repository
 public class ListFragment : Fragment(), Contract.View {
 
     private lateinit var binding: FragmentListBinding
-    private val adapterRepositorys: AdapterRepositories = AdapterRepositories()
+    private val adapterRepositories: AdapterRepositories = AdapterRepositories()
     @Inject
     lateinit var presenter: Contract.Presenter
     private var initialized = false
@@ -48,7 +48,23 @@ public class ListFragment : Fragment(), Contract.View {
         (activity as AppCompatActivity).setSupportActionBar(binding.toolbar)
         binding.recyclerview10.addItemDecoration(DividerItemDecoration(context, LinearLayoutManager.VERTICAL))
         binding.recyclerview10.layoutManager = LinearLayoutManager(context) as RecyclerView.LayoutManager
-        binding.recyclerview10.adapter = adapterRepositorys
+        binding.recyclerview10.adapter = adapterRepositories
+
+        adapterRepositories.setOnItemClickListener(object : AdapterRepositories.OnItemClickListener {
+            override fun onItemClick(position: Int, item: Repository, image: View) {
+                openDetailsScreen(item, image)
+            }
+        })
+
+        binding.errorLayout.setOnClickListener {
+            presenter.onErrorLayoutClicked()
+        }
+
+        binding.swipeToRefresh.setOnRefreshListener(object : SwipeRefreshLayout.OnRefreshListener {
+            override fun onRefresh() {
+                presenter.onSwipeRefresh()
+            }
+        })
 
         presenter.attach()
         initialized = true
@@ -56,28 +72,17 @@ public class ListFragment : Fragment(), Contract.View {
 
     }
 
-    override fun setAdapterData(Repositorys: List<Repository>) {
-        adapterRepositorys.setData(Repositorys)
+    override fun setAdapterData(repositories: List<Repository>) {
+        adapterRepositories.setData(repositories)
     }
 
-    override fun setAdapterOnClickListener(onClickListener: AdapterRepositories.OnItemClickListener) {
-        adapterRepositorys.setOnItemClickListener(onItemClickListener = onClickListener)
-    }
-
-    override fun setOnErrorLayoutClickListener(onClickListener: View.OnClickListener) {
-        binding.errorLayout.setOnClickListener(onClickListener)
-    }
-
-    override fun setSwipeToRefreshListener(swipeToRefreshListener: SwipeRefreshLayout.OnRefreshListener) {
-        binding.swipeToRefresh.setOnRefreshListener(swipeToRefreshListener)
-    }
 
     override fun openDetailsScreen(Repository: Repository, image: View) {
         (activity as NavigationInterface).openDetailsFragment(Repository, image)
     }
 
     override fun hideProgress() {
-        binding.swipeToRefresh.isRefreshing = false
+        binding.swipeToRefresh.isRefreshing=false
         binding.bar.visibility = View.GONE
     }
 

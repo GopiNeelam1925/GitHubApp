@@ -33,7 +33,6 @@ public class AdapterRepositories : RecyclerView.Adapter<AdapterRepositories.Adap
         notifyItemRangeRemoved(0, dataSize)
         data.addAll(newData)
         notifyItemRangeInserted(0, data.size)
-        Log.e("XXX", "Set data " + newData.size)
     }
 
 

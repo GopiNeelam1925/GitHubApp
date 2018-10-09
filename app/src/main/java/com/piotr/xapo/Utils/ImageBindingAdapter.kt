@@ -10,6 +10,7 @@ object ImageBindingAdapter {
     @JvmStatic
     @BindingAdapter("android:src")
     fun setImageUrl(view: ImageView, url: String) {
+        //overriding the size forces DetailFragment to display image from cache and makes shared transition smoother.
         Glide.with(view.context)
                 .load(url)
                 .apply(RequestOptions().override(120,120))
