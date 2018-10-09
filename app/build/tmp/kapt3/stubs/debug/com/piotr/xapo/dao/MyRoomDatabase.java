@@ -2,15 +2,15 @@ package com.piotr.xapo.dao;
 
 import java.lang.System;
 
-@android.arch.persistence.room.Database(entities = {com.piotr.xapo.model.User.class}, version = 1)
-@kotlin.Metadata(mv = {1, 1, 11}, bv = {1, 0, 2}, k = 1, d1 = {"\u0000\u0014\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\b\'\u0018\u0000 \u00052\u00020\u0001:\u0001\u0005B\u0005\u00a2\u0006\u0002\u0010\u0002J\b\u0010\u0003\u001a\u00020\u0004H&\u00a8\u0006\u0006"}, d2 = {"Lcom/piotr/xapo/dao/MyRoomDatabase;", "Landroid/arch/persistence/room/RoomDatabase;", "()V", "userDao", "Lcom/piotr/xapo/dao/UserDao;", "Companion", "app_debug"})
+@android.arch.persistence.room.Database(entities = {com.piotr.xapo.model.Repository.class}, version = 1)
+@kotlin.Metadata(mv = {1, 1, 11}, bv = {1, 0, 2}, k = 1, d1 = {"\u0000\u0014\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\b\'\u0018\u0000 \u00052\u00020\u0001:\u0001\u0005B\u0005\u00a2\u0006\u0002\u0010\u0002J\b\u0010\u0003\u001a\u00020\u0004H&\u00a8\u0006\u0006"}, d2 = {"Lcom/piotr/xapo/dao/MyRoomDatabase;", "Landroid/arch/persistence/room/RoomDatabase;", "()V", "repositoryDao", "Lcom/piotr/xapo/dao/RepositoryDao;", "Companion", "app_debug"})
 public abstract class MyRoomDatabase extends android.arch.persistence.room.RoomDatabase {
     @org.jetbrains.annotations.NotNull()
     private static final java.lang.String DATABASE_NAME = "test";
     public static final com.piotr.xapo.dao.MyRoomDatabase.Companion Companion = null;
     
     @org.jetbrains.annotations.NotNull()
-    public abstract com.piotr.xapo.dao.UserDao userDao();
+    public abstract com.piotr.xapo.dao.RepositoryDao repositoryDao();
     
     public MyRoomDatabase() {
         super();

@@ -8,7 +8,7 @@ import android.support.v4.app.Fragment
 import android.support.v7.app.AppCompatActivity
 import com.piotr.xapo.MyApplication
 import com.piotr.xapo.databinding.FragmentDetailsBinding
-import com.piotr.xapo.model.User
+import com.piotr.xapo.model.Repository
 
 public class DetailsFragment : Fragment(), Contract.View {
 
@@ -28,8 +28,8 @@ public class DetailsFragment : Fragment(), Contract.View {
     }
 
     fun readArgs() {
-        val user: User = arguments!!.getSerializable("user") as User
-        binding.user = user
+        val repository: Repository = arguments!!.getSerializable("repository") as Repository
+        binding.repository = repository
     }
 
 }

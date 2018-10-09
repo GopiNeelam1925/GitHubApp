@@ -2,7 +2,6 @@ package com.piotr.xapo
 
 import com.google.gson.Gson
 import com.google.gson.reflect.TypeToken
-import com.piotr.xapo.model.User
 
 object TestValues {
     val testResponse: String = "[\n" +

@@ -9,6 +9,9 @@ import android.app.Application
 import android.arch.persistence.room.Room
 import com.piotr.xapo.dao.MyRoomDatabase
 
+/**
+ * Singleton instances shared across whole application
+ */
 @Module
 public open class ApplicationModule(val application: Application) {
 
@@ -21,7 +24,7 @@ public open class ApplicationModule(val application: Application) {
     @Provides
     @Singleton
     open fun getGitHubApi(): GitHubApi {
-        return GitHubApi.getInstance()
+        return GitHubApi()
     }
 
 

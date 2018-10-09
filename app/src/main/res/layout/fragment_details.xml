@@ -5,9 +5,11 @@
 
     <data>
 
+        <import type="java.lang.Integer" />
+
         <variable
-            name="user"
-            type="com.piotr.xapo.model.User" />
+            name="repository"
+            type="com.piotr.xapo.model.Repository" />
     </data>
 
 
@@ -28,7 +30,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:fitsSystemWindows="true"
-                android:title="@{user.login}"
+                android:title="@{repository.name}"
                 app:contentScrim="?attr/colorPrimary"
                 app:expandedTitleMarginEnd="64dp"
                 app:expandedTitleMarginStart="48dp"
@@ -40,14 +42,14 @@
                     android:layout_height="100dp"
                     android:layout_gravity="center"
                     android:layout_margin="20dp"
-                    android:src="@{user.avatar_url}"
+                    android:src="@{repository.imageUrl}"
                     android:transitionName="profile" />
 
                 <android.support.v7.widget.Toolbar
                     android:id="@+id/toolbar"
-                    android:title="@{user.login}"
                     android:layout_width="match_parent"
                     android:layout_height="?attr/actionBarSize"
+                    android:title="@{repository.name}"
                     app:layout_collapseMode="pin"
                     app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
             </android.support.design.widget.CollapsingToolbarLayout>
@@ -71,14 +73,14 @@
                     android:layout_height="wrap_content"
                     android:paddingLeft="10dp"
                     android:paddingTop="10dp"
-                    android:text="login"
+                    android:text="author"
                     android:textSize="12sp" />
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:padding="10dp"
-                    android:text="@{user.login}"
+                    android:text="@{repository.author}"
                     android:textSize="18sp" />
 
                 <View
@@ -91,7 +93,7 @@
                     android:layout_height="wrap_content"
                     android:paddingLeft="10dp"
                     android:paddingTop="10dp"
-                    android:text="events"
+                    android:text="url"
                     android:textSize="12sp" />
 
                 <TextView
@@ -99,7 +101,7 @@
                     android:layout_height="wrap_content"
                     android:autoLink="web"
                     android:padding="10dp"
-                    android:text="@{user.events_url}"
+                    android:text="@{repository.url}"
                     android:textSize="18sp" />
 
                 <View
@@ -113,7 +115,7 @@
                     android:layout_height="wrap_content"
                     android:paddingLeft="10dp"
                     android:paddingTop="10dp"
-                    android:text="followers"
+                    android:text="currentPeriodStars"
                     android:textSize="12sp" />
 
                 <TextView
@@ -121,7 +123,7 @@
                     android:layout_height="wrap_content"
                     android:autoLink="web"
                     android:padding="10dp"
-                    android:text="@{user.followers_url}"
+                    android:text="@{Integer.toString(repository.currentPeriodStars)}"
                     android:textSize="18sp" />
 
                 <View
@@ -134,7 +136,7 @@
                     android:layout_height="wrap_content"
                     android:paddingLeft="10dp"
                     android:paddingTop="10dp"
-                    android:text="following"
+                    android:text="forks"
                     android:textSize="12sp" />
 
                 <TextView
@@ -142,7 +144,7 @@
                     android:layout_height="wrap_content"
                     android:autoLink="web"
                     android:padding="10dp"
-                    android:text="@{user.following_url}"
+                    android:text="@{Integer.toString(repository.forks)}"
                     android:textSize="18sp" />
 
                 <View
@@ -155,7 +157,7 @@
                     android:layout_height="wrap_content"
                     android:paddingLeft="10dp"
                     android:paddingTop="10dp"
-                    android:text="gists"
+                    android:text="language"
                     android:textSize="12sp" />
 
                 <TextView
@@ -163,7 +165,7 @@
                     android:layout_height="wrap_content"
                     android:autoLink="web"
                     android:padding="10dp"
-                    android:text="@{user.gists_url}"
+                    android:text="@{repository.language}"
                     android:textSize="18sp" />
 
                 <View
@@ -176,7 +178,7 @@
                     android:layout_height="wrap_content"
                     android:paddingLeft="10dp"
                     android:paddingTop="10dp"
-                    android:text="organizations"
+                    android:text="imageUrl"
                     android:textSize="12sp" />
 
                 <TextView
@@ -184,7 +186,7 @@
                     android:layout_height="wrap_content"
                     android:autoLink="web"
                     android:padding="10dp"
-                    android:text="@{user.organizations_url}"
+                    android:text="@{repository.imageUrl}"
                     android:textSize="18sp" />
 
                 <View
@@ -197,7 +199,7 @@
                     android:layout_height="wrap_content"
                     android:paddingLeft="10dp"
                     android:paddingTop="10dp"
-                    android:text="repos"
+                    android:text="stars"
                     android:textSize="12sp" />
 
                 <TextView
@@ -205,55 +207,10 @@
                     android:layout_height="wrap_content"
                     android:autoLink="web"
                     android:padding="10dp"
-                    android:text="@{user.repos_url}"
+                    android:text="@{Integer.toString(repository.stars)}"
                     android:textSize="18sp" />
 
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="1dp"
-                    android:background="@color/colorPrimary" />
 
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:paddingLeft="10dp"
-                    android:paddingTop="10dp"
-                    android:text="subscriptions"
-                    android:textSize="12sp" />
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:autoLink="web"
-                    android:padding="10dp"
-                    android:text="@{user.subscriptions_url}"
-                    android:textSize="18sp" />
-
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="1dp"
-                    android:background="@color/colorPrimary" />
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:paddingLeft="10dp"
-                    android:paddingTop="10dp"
-                    android:text="html"
-                    android:textSize="12sp" />
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:autoLink="web"
-                    android:padding="10dp"
-                    android:text="@{user.html_url}"
-                    android:textSize="18sp" />
-
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="1dp"
-                    android:background="@color/colorPrimary" />
             </android.widget.LinearLayout>
         </android.support.v4.widget.NestedScrollView>
     </android.support.design.widget.CoordinatorLayout>

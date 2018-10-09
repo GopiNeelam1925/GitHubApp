@@ -1,7 +1,6 @@
 package com.piotr.xapo
 
 import com.piotr.xapo.api.GitHubApi
-import com.piotr.xapo.model.User
 import io.reactivex.Observable
 import io.reactivex.android.schedulers.AndroidSchedulers
 import io.reactivex.schedulers.Schedulers

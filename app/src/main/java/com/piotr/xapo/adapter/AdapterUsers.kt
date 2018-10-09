@@ -1,47 +1,44 @@
 package com.piotr.xapo.adapter
 
 import android.os.Build
-import com.piotr.xapo.model.User
 import java.util.ArrayList
 import android.view.LayoutInflater
 import android.view.View
 import android.support.v7.widget.RecyclerView
+import android.util.Log
 import android.widget.ImageView
-import com.piotr.xapo.databinding.RowUserBinding
+import com.piotr.xapo.databinding.RowRepositoryBinding
+import com.piotr.xapo.model.Repository
 
-public class AdapterUsers : RecyclerView.Adapter<AdapterUsers.AdapterViewHolder>() {
+public class AdapterRepositorys : RecyclerView.Adapter<AdapterRepositorys.AdapterViewHolder>() {
 
     private var onItemClickListener: OnItemClickListener? = null
-    private var data: MutableList<User> = ArrayList()
+    private var data: MutableList<Repository> = ArrayList()
 
-    init {
-        setHasStableIds(true)
-    }
-
-    override fun getItemId(position: Int): Long = data.get(position).id.toLong()
     override fun getItemCount(): Int = data.size
 
     interface OnItemClickListener {
-        fun onItemClick(position: Int, item: User, image: View): Unit
+        fun onItemClick(position: Int, item: Repository, image: View)
     }
 
 
-    class AdapterViewHolder(val view: RowUserBinding) : RecyclerView.ViewHolder(view.root) {
+    class AdapterViewHolder(val view: RowRepositoryBinding) : RecyclerView.ViewHolder(view.root) {
         val image: ImageView = view.ivProfile
     }
 
 
-    fun setData(newData: List<User>) {
+    fun setData(newData: List<Repository>) {
         val dataSize: Int = data.size
         data.clear()
         notifyItemRangeRemoved(0, dataSize)
         data.addAll(newData)
         notifyItemRangeInserted(0, data.size)
+        Log.e("XXX", "Set data " + newData.size)
     }
 
 
     override fun onCreateViewHolder(parent: android.view.ViewGroup, viewType: Int): AdapterViewHolder {
-        val row: RowUserBinding = RowUserBinding.inflate(LayoutInflater.from(parent.context), parent, false)
+        val row: RowRepositoryBinding = RowRepositoryBinding.inflate(LayoutInflater.from(parent.context), parent, false)
         return AdapterViewHolder(row);
 
     }
@@ -56,8 +53,8 @@ public class AdapterUsers : RecyclerView.Adapter<AdapterUsers.AdapterViewHolder>
                 onItemClickListener?.onItemClick(position, data.get(position), viewHolder.image);
         }
 
-        val user: User = data.get(position)
-        viewHolder.view.user = user
+        val repository: Repository = data.get(position)
+        viewHolder.view.repository = repository
 
     }
 

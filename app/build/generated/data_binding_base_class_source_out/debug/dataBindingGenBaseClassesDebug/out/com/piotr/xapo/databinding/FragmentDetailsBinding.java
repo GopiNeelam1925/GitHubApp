@@ -12,7 +12,7 @@ import android.support.v7.widget.Toolbar;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import com.piotr.xapo.model.User;
+import com.piotr.xapo.model.Repository;
 import de.hdodenhof.circleimageview.CircleImageView;
 
 public abstract class FragmentDetailsBinding extends ViewDataBinding {
@@ -29,7 +29,7 @@ public abstract class FragmentDetailsBinding extends ViewDataBinding {
   public final Toolbar toolbar;
 
   @Bindable
-  protected User mUser;
+  protected Repository mRepository;
 
   protected FragmentDetailsBinding(DataBindingComponent _bindingComponent, View _root,
       int _localFieldCount, AppBarLayout appbar, CollapsingToolbarLayout collapsing,
@@ -41,11 +41,11 @@ public abstract class FragmentDetailsBinding extends ViewDataBinding {
     this.toolbar = toolbar;
   }
 
-  public abstract void setUser(@Nullable User user);
+  public abstract void setRepository(@Nullable Repository repository);
 
   @Nullable
-  public User getUser() {
-    return mUser;
+  public Repository getRepository() {
+    return mRepository;
   }
 
   @NonNull

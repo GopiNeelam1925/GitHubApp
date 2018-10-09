@@ -1,229 +1,229 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /home/piotr/develop/MotivProjects/XapoTest/app/src/main/AndroidManifest.xml:2:1-25:12
-INJECTED from /home/piotr/develop/MotivProjects/XapoTest/app/src/main/AndroidManifest.xml:2:1-25:12
-INJECTED from /home/piotr/develop/MotivProjects/XapoTest/app/src/main/AndroidManifest.xml:2:1-25:12
-INJECTED from /home/piotr/develop/MotivProjects/XapoTest/app/src/main/AndroidManifest.xml:2:1-25:12
-MERGED from [com.android.databinding:adapters:3.2.0-beta05] /home/piotr/.gradle/caches/transforms-1/files-1.1/adapters-3.2.0-beta05.aar/4919d3e892505a8a84c70bb609202d20/AndroidManifest.xml:17:1-24:12
-MERGED from [com.android.databinding:library:3.2.0-beta05] /home/piotr/.gradle/caches/transforms-1/files-1.1/library-3.2.0-beta05.aar/033a7ae86f19e61e50500bc4b66228b5/AndroidManifest.xml:17:1-24:12
-MERGED from [com.google.dagger:dagger-android-support:2.16] /home/piotr/.gradle/caches/transforms-1/files-1.1/dagger-android-support-2.16.aar/2cd83dc2a7450a9ad1f4d64274ffcfa3/AndroidManifest.xml:17:1-22:12
-MERGED from [android.arch.navigation:navigation-ui:1.0.0-alpha06] /home/piotr/.gradle/caches/transforms-1/files-1.1/navigation-ui-1.0.0-alpha06.aar/907581c0eff286e67c326f8b5fd4c9c7/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:design:27.1.1] /home/piotr/.gradle/caches/transforms-1/files-1.1/design-27.1.1.aar/cf7a814aa53b883a81175495319f1029/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:appcompat-v7:28.0.0] /home/piotr/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/c5ad029fbdd2f100cf46a50fc0367222/AndroidManifest.xml:17:1-22:12
-MERGED from [android.arch.persistence.room:runtime:1.1.1] /home/piotr/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/bc35d239cea405b52604002e3db452f7/AndroidManifest.xml:17:1-22:12
-MERGED from [com.github.bumptech.glide:glide:4.8.0] /home/piotr/.gradle/caches/transforms-1/files-1.1/glide-4.8.0.aar/c2975a470ac5229ecde14ed33875c7bd/AndroidManifest.xml:2:1-12:12
-MERGED from [com.android.support:support-v4:28.0.0] /home/piotr/.gradle/caches/transforms-1/files-1.1/support-v4-28.0.0.aar/972d03571a5f2c9d0f06bc00f0c53071/AndroidManifest.xml:17:1-22:12
-MERGED from [android.arch.navigation:navigation-fragment:1.0.0-alpha06] /home/piotr/.gradle/caches/transforms-1/files-1.1/navigation-fragment-1.0.0-alpha06.aar/40eb16248c54eb9afe718a626bbad59b/AndroidManifest.xml:17:1-22:12
-MERGED from [com.google.dagger:dagger-android:2.16] /home/piotr/.gradle/caches/transforms-1/files-1.1/dagger-android-2.16.aar/8286e8b444bde3b7d593a880e25a0f6d/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:recyclerview-v7:28.0.0] /home/piotr/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-28.0.0.aar/0e47415b923caf3626ff2da7917324dd/AndroidManifest.xml:17:1-22:12
-MERGED from [io.reactivex.rxjava2:rxandroid:2.0.2] /home/piotr/.gradle/caches/transforms-1/files-1.1/rxandroid-2.0.2.aar/a91cce2a8011a1e8e41b0d8eca4d99dc/AndroidManifest.xml:15:1-21:12
-MERGED from [de.hdodenhof:circleimageview:2.2.0] /home/piotr/.gradle/caches/transforms-1/files-1.1/circleimageview-2.2.0.aar/8e4b051d1d6e988f4cf3b177e896f181/AndroidManifest.xml:2:1-11:12
-MERGED from [android.arch.navigation:navigation-runtime:1.0.0-alpha06] /home/piotr/.gradle/caches/transforms-1/files-1.1/navigation-runtime-1.0.0-alpha06.aar/4d2d39645b674783630428fd72f4b3c2/AndroidManifest.xml:17:1-22:12
-MERGED from [android.arch.navigation:navigation-common:1.0.0-alpha06] /home/piotr/.gradle/caches/transforms-1/files-1.1/navigation-common-1.0.0-alpha06.aar/16c374c4edfa86b53e685cfc52698d77/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:transition:27.1.1] /home/piotr/.gradle/caches/transforms-1/files-1.1/transition-27.1.1.aar/3ac07216a130037db0ef6b23f0c9fbeb/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-fragment:28.0.0] /home/piotr/.gradle/caches/transforms-1/files-1.1/support-fragment-28.0.0.aar/5f43aa52361e7a2853f9aabc135d6196/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:animated-vector-drawable:28.0.0] /home/piotr/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-28.0.0.aar/fbf4c1e23ee88503c291350bcc9210dc/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-core-ui:28.0.0] /home/piotr/.gradle/caches/transforms-1/files-1.1/support-core-ui-28.0.0.aar/fd3a28d892fe3616c3fe8375ee773025/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-core-utils:28.0.0] /home/piotr/.gradle/caches/transforms-1/files-1.1/support-core-utils-28.0.0.aar/8c7428156bd118341d2004f6728fb8e8/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:loader:28.0.0] /home/piotr/.gradle/caches/transforms-1/files-1.1/loader-28.0.0.aar/f58ae77b31d101c15060f3b8dda2ba3b/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:viewpager:28.0.0] /home/piotr/.gradle/caches/transforms-1/files-1.1/viewpager-28.0.0.aar/c2376284219d511601a0fd8e88be7828/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:coordinatorlayout:28.0.0] /home/piotr/.gradle/caches/transforms-1/files-1.1/coordinatorlayout-28.0.0.aar/108e4ace5fb6e21c5f451c7aae80ff27/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:drawerlayout:28.0.0] /home/piotr/.gradle/caches/transforms-1/files-1.1/drawerlayout-28.0.0.aar/d47eacb1aae14bffad09cd6c979fcc26/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:slidingpanelayout:28.0.0] /home/piotr/.gradle/caches/transforms-1/files-1.1/slidingpanelayout-28.0.0.aar/e9f38ea3306fe8ff8bdc4d9293c47d8d/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:customview:28.0.0] /home/piotr/.gradle/caches/transforms-1/files-1.1/customview-28.0.0.aar/2efb35d870a87e10d08b08c135fac841/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:swiperefreshlayout:28.0.0] /home/piotr/.gradle/caches/transforms-1/files-1.1/swiperefreshlayout-28.0.0.aar/a05f79e10f91c4b6e63e8148eb805178/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:asynclayoutinflater:28.0.0] /home/piotr/.gradle/caches/transforms-1/files-1.1/asynclayoutinflater-28.0.0.aar/5281f1dad892df7beb1cba793a4fd831/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-vector-drawable:28.0.0] /home/piotr/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-28.0.0.aar/cae218bc1c6419d0a7c8c2d59a52bc9e/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-media-compat:28.0.0] /home/piotr/.gradle/caches/transforms-1/files-1.1/support-media-compat-28.0.0.aar/99a913d3140e9aa68978b79b8fd9dcff/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-compat:28.0.0] /home/piotr/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/0d9c945beaf270090990063ee6f8d874/AndroidManifest.xml:17:1-24:12
-MERGED from [android.arch.lifecycle:runtime:1.1.1] /home/piotr/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/98a884add244d136a5f2dcb30ef5d649/AndroidManifest.xml:17:1-22:12
-MERGED from [android.arch.persistence:db-framework:1.1.1] /home/piotr/.gradle/caches/transforms-1/files-1.1/db-framework-1.1.1.aar/3dfd2d57b55c0136e3943569d1fdca33/AndroidManifest.xml:17:1-22:12
-MERGED from [android.arch.persistence:db:1.1.1] /home/piotr/.gradle/caches/transforms-1/files-1.1/db-1.1.1.aar/45e8f3fc25247d3c6981930abf177a7a/AndroidManifest.xml:17:1-22:12
-MERGED from [android.arch.lifecycle:livedata:1.1.1] /home/piotr/.gradle/caches/transforms-1/files-1.1/livedata-1.1.1.aar/9c79098bca39b7b420f8ccb0b88214cf/AndroidManifest.xml:17:1-22:12
-MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /home/piotr/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.1.aar/9f607a2b76a48ed9df16da45c83423a8/AndroidManifest.xml:17:1-22:12
-MERGED from [android.arch.core:runtime:1.1.1] /home/piotr/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/766467490f54b51e30f4fa98611e5dec/AndroidManifest.xml:17:1-22:12
-MERGED from [com.github.bumptech.glide:gifdecoder:4.8.0] /home/piotr/.gradle/caches/transforms-1/files-1.1/gifdecoder-4.8.0.aar/2f662f1c0c1fb19e44c35f11d18873e6/AndroidManifest.xml:2:1-11:12
-MERGED from [com.android.support:documentfile:28.0.0] /home/piotr/.gradle/caches/transforms-1/files-1.1/documentfile-28.0.0.aar/608b6cd14aee42937841bcdac6e0cf85/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:localbroadcastmanager:28.0.0] /home/piotr/.gradle/caches/transforms-1/files-1.1/localbroadcastmanager-28.0.0.aar/fc47fb9e1e3cd6a54652ee7095260808/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:print:28.0.0] /home/piotr/.gradle/caches/transforms-1/files-1.1/print-28.0.0.aar/fd993d445ce54f8fdbc535a047b089ed/AndroidManifest.xml:17:1-22:12
-MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /home/piotr/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.1.aar/09bad4b3d43f77ff602012edfc1a127a/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:interpolator:28.0.0] /home/piotr/.gradle/caches/transforms-1/files-1.1/interpolator-28.0.0.aar/6e186f04350df2fd81b8e3c610b50145/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:cursoradapter:28.0.0] /home/piotr/.gradle/caches/transforms-1/files-1.1/cursoradapter-28.0.0.aar/d46346c881f0d46bce749e8b37c62d02/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:versionedparcelable:28.0.0] /home/piotr/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0.aar/3d4913b70350f87fbc92cf001c6c64ec/AndroidManifest.xml:17:1-25:12
-INJECTED from /home/piotr/develop/MotivProjects/XapoTest/app/src/main/AndroidManifest.xml:2:1-25:12
-INJECTED from /home/piotr/develop/MotivProjects/XapoTest/app/src/main/AndroidManifest.xml:2:1-25:12
-INJECTED from /home/piotr/develop/MotivProjects/XapoTest/app/src/main/AndroidManifest.xml:2:1-25:12
+ADDED from /home/piotr/develop/AndroidStudioProjects/GitHubApp/app/src/main/AndroidManifest.xml:2:1-25:12
+INJECTED from /home/piotr/develop/AndroidStudioProjects/GitHubApp/app/src/main/AndroidManifest.xml:2:1-25:12
+INJECTED from /home/piotr/develop/AndroidStudioProjects/GitHubApp/app/src/main/AndroidManifest.xml:2:1-25:12
+INJECTED from /home/piotr/develop/AndroidStudioProjects/GitHubApp/app/src/main/AndroidManifest.xml:2:1-25:12
+MERGED from [com.android.databinding:adapters:3.2.0-beta05] /home/piotr/.gradle/caches/transforms-1/files-1.1/adapters-3.2.0-beta05.aar/4d381d1c893953127d7145be559c89b8/AndroidManifest.xml:17:1-24:12
+MERGED from [com.android.databinding:library:3.2.0-beta05] /home/piotr/.gradle/caches/transforms-1/files-1.1/library-3.2.0-beta05.aar/46948931517a3656b783d62d33ba2fe3/AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.dagger:dagger-android-support:2.16] /home/piotr/.gradle/caches/transforms-1/files-1.1/dagger-android-support-2.16.aar/dc823d09cecc564dafd25d2a02cf1d32/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.navigation:navigation-ui:1.0.0-alpha06] /home/piotr/.gradle/caches/transforms-1/files-1.1/navigation-ui-1.0.0-alpha06.aar/30f6ec760c33c2c28925a7ec7fd47f5b/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:design:27.1.1] /home/piotr/.gradle/caches/transforms-1/files-1.1/design-27.1.1.aar/cd6b13d7badc64f5dc0d507192c15201/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:appcompat-v7:28.0.0] /home/piotr/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/3c10427313027703026e6ed69847bb18/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.persistence.room:runtime:1.1.1] /home/piotr/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/081896b603d77654e58aee316400316f/AndroidManifest.xml:17:1-22:12
+MERGED from [com.github.bumptech.glide:glide:4.8.0] /home/piotr/.gradle/caches/transforms-1/files-1.1/glide-4.8.0.aar/f93fe1d7657e786a495843de3dca1028/AndroidManifest.xml:2:1-12:12
+MERGED from [com.android.support:support-v4:28.0.0] /home/piotr/.gradle/caches/transforms-1/files-1.1/support-v4-28.0.0.aar/c06f561afbaa318d70dff998d2eb85bc/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.navigation:navigation-fragment:1.0.0-alpha06] /home/piotr/.gradle/caches/transforms-1/files-1.1/navigation-fragment-1.0.0-alpha06.aar/a756b41597a9841cf793e471b3c5e16e/AndroidManifest.xml:17:1-22:12
+MERGED from [com.google.dagger:dagger-android:2.16] /home/piotr/.gradle/caches/transforms-1/files-1.1/dagger-android-2.16.aar/5e72172473b486b554badb513e44de3f/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:recyclerview-v7:28.0.0] /home/piotr/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-28.0.0.aar/5cd7a28ce8a078ecbe51d5aa1dcdbc31/AndroidManifest.xml:17:1-22:12
+MERGED from [io.reactivex.rxjava2:rxandroid:2.0.2] /home/piotr/.gradle/caches/transforms-1/files-1.1/rxandroid-2.0.2.aar/df3488ef5c7f8a499ce2cbf71476afa0/AndroidManifest.xml:15:1-21:12
+MERGED from [de.hdodenhof:circleimageview:2.2.0] /home/piotr/.gradle/caches/transforms-1/files-1.1/circleimageview-2.2.0.aar/73440c7722599dbcb81ee907e5075e32/AndroidManifest.xml:2:1-11:12
+MERGED from [android.arch.navigation:navigation-runtime:1.0.0-alpha06] /home/piotr/.gradle/caches/transforms-1/files-1.1/navigation-runtime-1.0.0-alpha06.aar/8645f16f24b0fbefcb50129b8f5a9a75/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.navigation:navigation-common:1.0.0-alpha06] /home/piotr/.gradle/caches/transforms-1/files-1.1/navigation-common-1.0.0-alpha06.aar/0bc65f6cef301765fff54545332ee6dc/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:transition:27.1.1] /home/piotr/.gradle/caches/transforms-1/files-1.1/transition-27.1.1.aar/cef13cc74152475e8dbff1f5595621e5/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-fragment:28.0.0] /home/piotr/.gradle/caches/transforms-1/files-1.1/support-fragment-28.0.0.aar/8ed23dd0ebf9eed3fc83501e8dec5c8a/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] /home/piotr/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-28.0.0.aar/8fcc8cf5224a3ec83ca09cd4d56554cb/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-ui:28.0.0] /home/piotr/.gradle/caches/transforms-1/files-1.1/support-core-ui-28.0.0.aar/d4e6c17124cb609ed2861018aa715e4c/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-utils:28.0.0] /home/piotr/.gradle/caches/transforms-1/files-1.1/support-core-utils-28.0.0.aar/4209bd654ea9afc57b60e1208d5c50b3/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:loader:28.0.0] /home/piotr/.gradle/caches/transforms-1/files-1.1/loader-28.0.0.aar/0978008963a93acde2287ee3ac998335/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:viewpager:28.0.0] /home/piotr/.gradle/caches/transforms-1/files-1.1/viewpager-28.0.0.aar/1d3f0b8d20acfd565ae0095522466670/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:coordinatorlayout:28.0.0] /home/piotr/.gradle/caches/transforms-1/files-1.1/coordinatorlayout-28.0.0.aar/e7ee3cf8ff1fc2ba6218c1c5020be36b/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:drawerlayout:28.0.0] /home/piotr/.gradle/caches/transforms-1/files-1.1/drawerlayout-28.0.0.aar/aa6115eab70451defd5a92dc84da3509/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:slidingpanelayout:28.0.0] /home/piotr/.gradle/caches/transforms-1/files-1.1/slidingpanelayout-28.0.0.aar/b55ac7b6caa4837ea3a8037e399340af/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:customview:28.0.0] /home/piotr/.gradle/caches/transforms-1/files-1.1/customview-28.0.0.aar/adb6c993623d6e1162f5d70d270fddd6/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] /home/piotr/.gradle/caches/transforms-1/files-1.1/swiperefreshlayout-28.0.0.aar/facaa83eb91110bcdc8ebc63b925a1ec/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] /home/piotr/.gradle/caches/transforms-1/files-1.1/asynclayoutinflater-28.0.0.aar/f91438d325a8fe0adb28a942bf31d7fe/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-vector-drawable:28.0.0] /home/piotr/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-28.0.0.aar/1c87691b18d8227bb0b069febbcc4714/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-media-compat:28.0.0] /home/piotr/.gradle/caches/transforms-1/files-1.1/support-media-compat-28.0.0.aar/34046f4877b447ec60597e369512954e/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-compat:28.0.0] /home/piotr/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/c04cc111dba1d8a41d7c96cc804f40f9/AndroidManifest.xml:17:1-24:12
+MERGED from [android.arch.lifecycle:runtime:1.1.1] /home/piotr/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/6f6126698585def463e6ed72825c6510/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.persistence:db-framework:1.1.1] /home/piotr/.gradle/caches/transforms-1/files-1.1/db-framework-1.1.1.aar/a1f403bc1e56e941ce3a8275c4521e49/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.persistence:db:1.1.1] /home/piotr/.gradle/caches/transforms-1/files-1.1/db-1.1.1.aar/f6a9aa57b82c0856aba03a329bdaaa3a/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata:1.1.1] /home/piotr/.gradle/caches/transforms-1/files-1.1/livedata-1.1.1.aar/c6b376e2141bafe3368a4c2133c0ce64/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /home/piotr/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.1.aar/8f63f1a8c24f5227656c0ab1c2ce1961/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.core:runtime:1.1.1] /home/piotr/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/2d2891dadeabcf7d2297d58e710a09a7/AndroidManifest.xml:17:1-22:12
+MERGED from [com.github.bumptech.glide:gifdecoder:4.8.0] /home/piotr/.gradle/caches/transforms-1/files-1.1/gifdecoder-4.8.0.aar/2fb706a4ac4b5d2c1e07fd8d54be21c7/AndroidManifest.xml:2:1-11:12
+MERGED from [com.android.support:documentfile:28.0.0] /home/piotr/.gradle/caches/transforms-1/files-1.1/documentfile-28.0.0.aar/05d3e2be9fb16d7417c60c37f4ea7552/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] /home/piotr/.gradle/caches/transforms-1/files-1.1/localbroadcastmanager-28.0.0.aar/5d916f8958960a73ecc351be2627ce55/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:print:28.0.0] /home/piotr/.gradle/caches/transforms-1/files-1.1/print-28.0.0.aar/c02e4a56c00644749aaa6d01fb7892d6/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /home/piotr/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.1.aar/29e8affd4b71e338309655ef758635e5/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:interpolator:28.0.0] /home/piotr/.gradle/caches/transforms-1/files-1.1/interpolator-28.0.0.aar/66571438227e158eaaf316227b257657/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:cursoradapter:28.0.0] /home/piotr/.gradle/caches/transforms-1/files-1.1/cursoradapter-28.0.0.aar/c60144223c9fa2481197418547cca864/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:versionedparcelable:28.0.0] /home/piotr/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0.aar/6570063491b4191558fca9797411ac0e/AndroidManifest.xml:17:1-25:12
+INJECTED from /home/piotr/develop/AndroidStudioProjects/GitHubApp/app/src/main/AndroidManifest.xml:2:1-25:12
+INJECTED from /home/piotr/develop/AndroidStudioProjects/GitHubApp/app/src/main/AndroidManifest.xml:2:1-25:12
+INJECTED from /home/piotr/develop/AndroidStudioProjects/GitHubApp/app/src/main/AndroidManifest.xml:2:1-25:12
 	package
-		ADDED from /home/piotr/develop/MotivProjects/XapoTest/app/src/main/AndroidManifest.xml:3:5-29
-		INJECTED from /home/piotr/develop/MotivProjects/XapoTest/app/src/main/AndroidManifest.xml
-		INJECTED from /home/piotr/develop/MotivProjects/XapoTest/app/src/main/AndroidManifest.xml
+		ADDED from /home/piotr/develop/AndroidStudioProjects/GitHubApp/app/src/main/AndroidManifest.xml:3:5-29
+		INJECTED from /home/piotr/develop/AndroidStudioProjects/GitHubApp/app/src/main/AndroidManifest.xml
+		INJECTED from /home/piotr/develop/AndroidStudioProjects/GitHubApp/app/src/main/AndroidManifest.xml
 	android:versionName
-		INJECTED from /home/piotr/develop/MotivProjects/XapoTest/app/src/main/AndroidManifest.xml
-		ADDED from /home/piotr/develop/MotivProjects/XapoTest/app/src/main/AndroidManifest.xml:2:1-25:12
-		INJECTED from /home/piotr/develop/MotivProjects/XapoTest/app/src/main/AndroidManifest.xml
+		INJECTED from /home/piotr/develop/AndroidStudioProjects/GitHubApp/app/src/main/AndroidManifest.xml
+		ADDED from /home/piotr/develop/AndroidStudioProjects/GitHubApp/app/src/main/AndroidManifest.xml:2:1-25:12
+		INJECTED from /home/piotr/develop/AndroidStudioProjects/GitHubApp/app/src/main/AndroidManifest.xml
 	android:versionCode
-		INJECTED from /home/piotr/develop/MotivProjects/XapoTest/app/src/main/AndroidManifest.xml
-		ADDED from /home/piotr/develop/MotivProjects/XapoTest/app/src/main/AndroidManifest.xml:2:1-25:12
-		INJECTED from /home/piotr/develop/MotivProjects/XapoTest/app/src/main/AndroidManifest.xml
+		INJECTED from /home/piotr/develop/AndroidStudioProjects/GitHubApp/app/src/main/AndroidManifest.xml
+		ADDED from /home/piotr/develop/AndroidStudioProjects/GitHubApp/app/src/main/AndroidManifest.xml:2:1-25:12
+		INJECTED from /home/piotr/develop/AndroidStudioProjects/GitHubApp/app/src/main/AndroidManifest.xml
 	xmlns:android
-		ADDED from /home/piotr/develop/MotivProjects/XapoTest/app/src/main/AndroidManifest.xml:2:11-69
+		ADDED from /home/piotr/develop/AndroidStudioProjects/GitHubApp/app/src/main/AndroidManifest.xml:2:11-69
 uses-permission#android.permission.INTERNET
-ADDED from /home/piotr/develop/MotivProjects/XapoTest/app/src/main/AndroidManifest.xml:5:5-67
+ADDED from /home/piotr/develop/AndroidStudioProjects/GitHubApp/app/src/main/AndroidManifest.xml:5:5-67
 	android:name
-		ADDED from /home/piotr/develop/MotivProjects/XapoTest/app/src/main/AndroidManifest.xml:5:22-64
+		ADDED from /home/piotr/develop/AndroidStudioProjects/GitHubApp/app/src/main/AndroidManifest.xml:5:22-64
 application
-ADDED from /home/piotr/develop/MotivProjects/XapoTest/app/src/main/AndroidManifest.xml:6:5-23:19
-MERGED from [com.github.bumptech.glide:glide:4.8.0] /home/piotr/.gradle/caches/transforms-1/files-1.1/glide-4.8.0.aar/c2975a470ac5229ecde14ed33875c7bd/AndroidManifest.xml:10:5-20
-MERGED from [com.github.bumptech.glide:glide:4.8.0] /home/piotr/.gradle/caches/transforms-1/files-1.1/glide-4.8.0.aar/c2975a470ac5229ecde14ed33875c7bd/AndroidManifest.xml:10:5-20
-MERGED from [de.hdodenhof:circleimageview:2.2.0] /home/piotr/.gradle/caches/transforms-1/files-1.1/circleimageview-2.2.0.aar/8e4b051d1d6e988f4cf3b177e896f181/AndroidManifest.xml:9:5-20
-MERGED from [de.hdodenhof:circleimageview:2.2.0] /home/piotr/.gradle/caches/transforms-1/files-1.1/circleimageview-2.2.0.aar/8e4b051d1d6e988f4cf3b177e896f181/AndroidManifest.xml:9:5-20
-MERGED from [com.android.support:support-compat:28.0.0] /home/piotr/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/0d9c945beaf270090990063ee6f8d874/AndroidManifest.xml:22:5-94
-MERGED from [com.android.support:support-compat:28.0.0] /home/piotr/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/0d9c945beaf270090990063ee6f8d874/AndroidManifest.xml:22:5-94
-MERGED from [com.github.bumptech.glide:gifdecoder:4.8.0] /home/piotr/.gradle/caches/transforms-1/files-1.1/gifdecoder-4.8.0.aar/2f662f1c0c1fb19e44c35f11d18873e6/AndroidManifest.xml:9:5-20
-MERGED from [com.github.bumptech.glide:gifdecoder:4.8.0] /home/piotr/.gradle/caches/transforms-1/files-1.1/gifdecoder-4.8.0.aar/2f662f1c0c1fb19e44c35f11d18873e6/AndroidManifest.xml:9:5-20
-MERGED from [com.android.support:versionedparcelable:28.0.0] /home/piotr/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0.aar/3d4913b70350f87fbc92cf001c6c64ec/AndroidManifest.xml:22:5-23:19
-MERGED from [com.android.support:versionedparcelable:28.0.0] /home/piotr/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0.aar/3d4913b70350f87fbc92cf001c6c64ec/AndroidManifest.xml:22:5-23:19
+ADDED from /home/piotr/develop/AndroidStudioProjects/GitHubApp/app/src/main/AndroidManifest.xml:6:5-23:19
+MERGED from [com.github.bumptech.glide:glide:4.8.0] /home/piotr/.gradle/caches/transforms-1/files-1.1/glide-4.8.0.aar/f93fe1d7657e786a495843de3dca1028/AndroidManifest.xml:10:5-20
+MERGED from [com.github.bumptech.glide:glide:4.8.0] /home/piotr/.gradle/caches/transforms-1/files-1.1/glide-4.8.0.aar/f93fe1d7657e786a495843de3dca1028/AndroidManifest.xml:10:5-20
+MERGED from [de.hdodenhof:circleimageview:2.2.0] /home/piotr/.gradle/caches/transforms-1/files-1.1/circleimageview-2.2.0.aar/73440c7722599dbcb81ee907e5075e32/AndroidManifest.xml:9:5-20
+MERGED from [de.hdodenhof:circleimageview:2.2.0] /home/piotr/.gradle/caches/transforms-1/files-1.1/circleimageview-2.2.0.aar/73440c7722599dbcb81ee907e5075e32/AndroidManifest.xml:9:5-20
+MERGED from [com.android.support:support-compat:28.0.0] /home/piotr/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/c04cc111dba1d8a41d7c96cc804f40f9/AndroidManifest.xml:22:5-94
+MERGED from [com.android.support:support-compat:28.0.0] /home/piotr/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/c04cc111dba1d8a41d7c96cc804f40f9/AndroidManifest.xml:22:5-94
+MERGED from [com.github.bumptech.glide:gifdecoder:4.8.0] /home/piotr/.gradle/caches/transforms-1/files-1.1/gifdecoder-4.8.0.aar/2fb706a4ac4b5d2c1e07fd8d54be21c7/AndroidManifest.xml:9:5-20
+MERGED from [com.github.bumptech.glide:gifdecoder:4.8.0] /home/piotr/.gradle/caches/transforms-1/files-1.1/gifdecoder-4.8.0.aar/2fb706a4ac4b5d2c1e07fd8d54be21c7/AndroidManifest.xml:9:5-20
+MERGED from [com.android.support:versionedparcelable:28.0.0] /home/piotr/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0.aar/6570063491b4191558fca9797411ac0e/AndroidManifest.xml:22:5-23:19
+MERGED from [com.android.support:versionedparcelable:28.0.0] /home/piotr/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0.aar/6570063491b4191558fca9797411ac0e/AndroidManifest.xml:22:5-23:19
 	android:appComponentFactory
-		ADDED from [com.android.support:support-compat:28.0.0] /home/piotr/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/0d9c945beaf270090990063ee6f8d874/AndroidManifest.xml:22:18-91
+		ADDED from [com.android.support:support-compat:28.0.0] /home/piotr/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/c04cc111dba1d8a41d7c96cc804f40f9/AndroidManifest.xml:22:18-91
 	android:supportsRtl
-		ADDED from /home/piotr/develop/MotivProjects/XapoTest/app/src/main/AndroidManifest.xml:11:9-35
+		ADDED from /home/piotr/develop/AndroidStudioProjects/GitHubApp/app/src/main/AndroidManifest.xml:11:9-35
 	android:label
-		ADDED from /home/piotr/develop/MotivProjects/XapoTest/app/src/main/AndroidManifest.xml:10:9-41
+		ADDED from /home/piotr/develop/AndroidStudioProjects/GitHubApp/app/src/main/AndroidManifest.xml:10:9-41
 	android:icon
-		ADDED from /home/piotr/develop/MotivProjects/XapoTest/app/src/main/AndroidManifest.xml:9:9-45
+		ADDED from /home/piotr/develop/AndroidStudioProjects/GitHubApp/app/src/main/AndroidManifest.xml:9:9-45
 	android:allowBackup
-		ADDED from /home/piotr/develop/MotivProjects/XapoTest/app/src/main/AndroidManifest.xml:8:9-35
+		ADDED from /home/piotr/develop/AndroidStudioProjects/GitHubApp/app/src/main/AndroidManifest.xml:8:9-35
 	android:theme
-		ADDED from /home/piotr/develop/MotivProjects/XapoTest/app/src/main/AndroidManifest.xml:12:9-40
+		ADDED from /home/piotr/develop/AndroidStudioProjects/GitHubApp/app/src/main/AndroidManifest.xml:12:9-40
 	android:name
-		ADDED from /home/piotr/develop/MotivProjects/XapoTest/app/src/main/AndroidManifest.xml:7:9-38
+		ADDED from /home/piotr/develop/AndroidStudioProjects/GitHubApp/app/src/main/AndroidManifest.xml:7:9-38
 uses-library#android.test.runner
-ADDED from /home/piotr/develop/MotivProjects/XapoTest/app/src/main/AndroidManifest.xml:13:9-14:40
+ADDED from /home/piotr/develop/AndroidStudioProjects/GitHubApp/app/src/main/AndroidManifest.xml:13:9-14:40
 	android:required
-		ADDED from /home/piotr/develop/MotivProjects/XapoTest/app/src/main/AndroidManifest.xml:14:13-37
+		ADDED from /home/piotr/develop/AndroidStudioProjects/GitHubApp/app/src/main/AndroidManifest.xml:14:13-37
 	android:name
-		ADDED from /home/piotr/develop/MotivProjects/XapoTest/app/src/main/AndroidManifest.xml:13:23-57
+		ADDED from /home/piotr/develop/AndroidStudioProjects/GitHubApp/app/src/main/AndroidManifest.xml:13:23-57
 activity#com.piotr.xapo.activity.MainActivity
-ADDED from /home/piotr/develop/MotivProjects/XapoTest/app/src/main/AndroidManifest.xml:15:9-22:20
+ADDED from /home/piotr/develop/AndroidStudioProjects/GitHubApp/app/src/main/AndroidManifest.xml:15:9-22:20
 	android:name
-		ADDED from /home/piotr/develop/MotivProjects/XapoTest/app/src/main/AndroidManifest.xml:16:13-50
+		ADDED from /home/piotr/develop/AndroidStudioProjects/GitHubApp/app/src/main/AndroidManifest.xml:16:13-50
 intent-filter#action:name:android.intent.action.MAIN+action:name:android.intent.action.VIEW+category:name:android.intent.category.LAUNCHER
-ADDED from /home/piotr/develop/MotivProjects/XapoTest/app/src/main/AndroidManifest.xml:17:13-21:29
+ADDED from /home/piotr/develop/AndroidStudioProjects/GitHubApp/app/src/main/AndroidManifest.xml:17:13-21:29
 action#android.intent.action.VIEW
-ADDED from /home/piotr/develop/MotivProjects/XapoTest/app/src/main/AndroidManifest.xml:18:17-69
+ADDED from /home/piotr/develop/AndroidStudioProjects/GitHubApp/app/src/main/AndroidManifest.xml:18:17-69
 	android:name
-		ADDED from /home/piotr/develop/MotivProjects/XapoTest/app/src/main/AndroidManifest.xml:18:25-66
+		ADDED from /home/piotr/develop/AndroidStudioProjects/GitHubApp/app/src/main/AndroidManifest.xml:18:25-66
 action#android.intent.action.MAIN
-ADDED from /home/piotr/develop/MotivProjects/XapoTest/app/src/main/AndroidManifest.xml:19:17-69
+ADDED from /home/piotr/develop/AndroidStudioProjects/GitHubApp/app/src/main/AndroidManifest.xml:19:17-69
 	android:name
-		ADDED from /home/piotr/develop/MotivProjects/XapoTest/app/src/main/AndroidManifest.xml:19:25-66
+		ADDED from /home/piotr/develop/AndroidStudioProjects/GitHubApp/app/src/main/AndroidManifest.xml:19:25-66
 category#android.intent.category.LAUNCHER
-ADDED from /home/piotr/develop/MotivProjects/XapoTest/app/src/main/AndroidManifest.xml:20:17-77
+ADDED from /home/piotr/develop/AndroidStudioProjects/GitHubApp/app/src/main/AndroidManifest.xml:20:17-77
 	android:name
-		ADDED from /home/piotr/develop/MotivProjects/XapoTest/app/src/main/AndroidManifest.xml:20:27-74
+		ADDED from /home/piotr/develop/AndroidStudioProjects/GitHubApp/app/src/main/AndroidManifest.xml:20:27-74
 uses-sdk
-INJECTED from /home/piotr/develop/MotivProjects/XapoTest/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
-INJECTED from /home/piotr/develop/MotivProjects/XapoTest/app/src/main/AndroidManifest.xml
-INJECTED from /home/piotr/develop/MotivProjects/XapoTest/app/src/main/AndroidManifest.xml
-MERGED from [com.android.databinding:adapters:3.2.0-beta05] /home/piotr/.gradle/caches/transforms-1/files-1.1/adapters-3.2.0-beta05.aar/4919d3e892505a8a84c70bb609202d20/AndroidManifest.xml:22:5-44
-MERGED from [com.android.databinding:adapters:3.2.0-beta05] /home/piotr/.gradle/caches/transforms-1/files-1.1/adapters-3.2.0-beta05.aar/4919d3e892505a8a84c70bb609202d20/AndroidManifest.xml:22:5-44
-MERGED from [com.android.databinding:library:3.2.0-beta05] /home/piotr/.gradle/caches/transforms-1/files-1.1/library-3.2.0-beta05.aar/033a7ae86f19e61e50500bc4b66228b5/AndroidManifest.xml:22:5-44
-MERGED from [com.android.databinding:library:3.2.0-beta05] /home/piotr/.gradle/caches/transforms-1/files-1.1/library-3.2.0-beta05.aar/033a7ae86f19e61e50500bc4b66228b5/AndroidManifest.xml:22:5-44
-MERGED from [com.google.dagger:dagger-android-support:2.16] /home/piotr/.gradle/caches/transforms-1/files-1.1/dagger-android-support-2.16.aar/2cd83dc2a7450a9ad1f4d64274ffcfa3/AndroidManifest.xml:20:5-44
-MERGED from [com.google.dagger:dagger-android-support:2.16] /home/piotr/.gradle/caches/transforms-1/files-1.1/dagger-android-support-2.16.aar/2cd83dc2a7450a9ad1f4d64274ffcfa3/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.navigation:navigation-ui:1.0.0-alpha06] /home/piotr/.gradle/caches/transforms-1/files-1.1/navigation-ui-1.0.0-alpha06.aar/907581c0eff286e67c326f8b5fd4c9c7/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.navigation:navigation-ui:1.0.0-alpha06] /home/piotr/.gradle/caches/transforms-1/files-1.1/navigation-ui-1.0.0-alpha06.aar/907581c0eff286e67c326f8b5fd4c9c7/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:design:27.1.1] /home/piotr/.gradle/caches/transforms-1/files-1.1/design-27.1.1.aar/cf7a814aa53b883a81175495319f1029/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:design:27.1.1] /home/piotr/.gradle/caches/transforms-1/files-1.1/design-27.1.1.aar/cf7a814aa53b883a81175495319f1029/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:appcompat-v7:28.0.0] /home/piotr/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/c5ad029fbdd2f100cf46a50fc0367222/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:appcompat-v7:28.0.0] /home/piotr/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/c5ad029fbdd2f100cf46a50fc0367222/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.persistence.room:runtime:1.1.1] /home/piotr/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/bc35d239cea405b52604002e3db452f7/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.persistence.room:runtime:1.1.1] /home/piotr/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/bc35d239cea405b52604002e3db452f7/AndroidManifest.xml:20:5-44
-MERGED from [com.github.bumptech.glide:glide:4.8.0] /home/piotr/.gradle/caches/transforms-1/files-1.1/glide-4.8.0.aar/c2975a470ac5229ecde14ed33875c7bd/AndroidManifest.xml:6:5-8:41
-MERGED from [com.github.bumptech.glide:glide:4.8.0] /home/piotr/.gradle/caches/transforms-1/files-1.1/glide-4.8.0.aar/c2975a470ac5229ecde14ed33875c7bd/AndroidManifest.xml:6:5-8:41
-MERGED from [com.android.support:support-v4:28.0.0] /home/piotr/.gradle/caches/transforms-1/files-1.1/support-v4-28.0.0.aar/972d03571a5f2c9d0f06bc00f0c53071/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-v4:28.0.0] /home/piotr/.gradle/caches/transforms-1/files-1.1/support-v4-28.0.0.aar/972d03571a5f2c9d0f06bc00f0c53071/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.navigation:navigation-fragment:1.0.0-alpha06] /home/piotr/.gradle/caches/transforms-1/files-1.1/navigation-fragment-1.0.0-alpha06.aar/40eb16248c54eb9afe718a626bbad59b/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.navigation:navigation-fragment:1.0.0-alpha06] /home/piotr/.gradle/caches/transforms-1/files-1.1/navigation-fragment-1.0.0-alpha06.aar/40eb16248c54eb9afe718a626bbad59b/AndroidManifest.xml:20:5-44
-MERGED from [com.google.dagger:dagger-android:2.16] /home/piotr/.gradle/caches/transforms-1/files-1.1/dagger-android-2.16.aar/8286e8b444bde3b7d593a880e25a0f6d/AndroidManifest.xml:20:5-44
-MERGED from [com.google.dagger:dagger-android:2.16] /home/piotr/.gradle/caches/transforms-1/files-1.1/dagger-android-2.16.aar/8286e8b444bde3b7d593a880e25a0f6d/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:recyclerview-v7:28.0.0] /home/piotr/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-28.0.0.aar/0e47415b923caf3626ff2da7917324dd/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:recyclerview-v7:28.0.0] /home/piotr/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-28.0.0.aar/0e47415b923caf3626ff2da7917324dd/AndroidManifest.xml:20:5-44
-MERGED from [io.reactivex.rxjava2:rxandroid:2.0.2] /home/piotr/.gradle/caches/transforms-1/files-1.1/rxandroid-2.0.2.aar/a91cce2a8011a1e8e41b0d8eca4d99dc/AndroidManifest.xml:19:5-43
-MERGED from [io.reactivex.rxjava2:rxandroid:2.0.2] /home/piotr/.gradle/caches/transforms-1/files-1.1/rxandroid-2.0.2.aar/a91cce2a8011a1e8e41b0d8eca4d99dc/AndroidManifest.xml:19:5-43
-MERGED from [de.hdodenhof:circleimageview:2.2.0] /home/piotr/.gradle/caches/transforms-1/files-1.1/circleimageview-2.2.0.aar/8e4b051d1d6e988f4cf3b177e896f181/AndroidManifest.xml:5:5-7:41
-MERGED from [de.hdodenhof:circleimageview:2.2.0] /home/piotr/.gradle/caches/transforms-1/files-1.1/circleimageview-2.2.0.aar/8e4b051d1d6e988f4cf3b177e896f181/AndroidManifest.xml:5:5-7:41
-MERGED from [android.arch.navigation:navigation-runtime:1.0.0-alpha06] /home/piotr/.gradle/caches/transforms-1/files-1.1/navigation-runtime-1.0.0-alpha06.aar/4d2d39645b674783630428fd72f4b3c2/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.navigation:navigation-runtime:1.0.0-alpha06] /home/piotr/.gradle/caches/transforms-1/files-1.1/navigation-runtime-1.0.0-alpha06.aar/4d2d39645b674783630428fd72f4b3c2/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.navigation:navigation-common:1.0.0-alpha06] /home/piotr/.gradle/caches/transforms-1/files-1.1/navigation-common-1.0.0-alpha06.aar/16c374c4edfa86b53e685cfc52698d77/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.navigation:navigation-common:1.0.0-alpha06] /home/piotr/.gradle/caches/transforms-1/files-1.1/navigation-common-1.0.0-alpha06.aar/16c374c4edfa86b53e685cfc52698d77/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:transition:27.1.1] /home/piotr/.gradle/caches/transforms-1/files-1.1/transition-27.1.1.aar/3ac07216a130037db0ef6b23f0c9fbeb/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:transition:27.1.1] /home/piotr/.gradle/caches/transforms-1/files-1.1/transition-27.1.1.aar/3ac07216a130037db0ef6b23f0c9fbeb/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-fragment:28.0.0] /home/piotr/.gradle/caches/transforms-1/files-1.1/support-fragment-28.0.0.aar/5f43aa52361e7a2853f9aabc135d6196/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-fragment:28.0.0] /home/piotr/.gradle/caches/transforms-1/files-1.1/support-fragment-28.0.0.aar/5f43aa52361e7a2853f9aabc135d6196/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:animated-vector-drawable:28.0.0] /home/piotr/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-28.0.0.aar/fbf4c1e23ee88503c291350bcc9210dc/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:animated-vector-drawable:28.0.0] /home/piotr/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-28.0.0.aar/fbf4c1e23ee88503c291350bcc9210dc/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-ui:28.0.0] /home/piotr/.gradle/caches/transforms-1/files-1.1/support-core-ui-28.0.0.aar/fd3a28d892fe3616c3fe8375ee773025/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-ui:28.0.0] /home/piotr/.gradle/caches/transforms-1/files-1.1/support-core-ui-28.0.0.aar/fd3a28d892fe3616c3fe8375ee773025/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-utils:28.0.0] /home/piotr/.gradle/caches/transforms-1/files-1.1/support-core-utils-28.0.0.aar/8c7428156bd118341d2004f6728fb8e8/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-utils:28.0.0] /home/piotr/.gradle/caches/transforms-1/files-1.1/support-core-utils-28.0.0.aar/8c7428156bd118341d2004f6728fb8e8/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:loader:28.0.0] /home/piotr/.gradle/caches/transforms-1/files-1.1/loader-28.0.0.aar/f58ae77b31d101c15060f3b8dda2ba3b/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:loader:28.0.0] /home/piotr/.gradle/caches/transforms-1/files-1.1/loader-28.0.0.aar/f58ae77b31d101c15060f3b8dda2ba3b/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:viewpager:28.0.0] /home/piotr/.gradle/caches/transforms-1/files-1.1/viewpager-28.0.0.aar/c2376284219d511601a0fd8e88be7828/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:viewpager:28.0.0] /home/piotr/.gradle/caches/transforms-1/files-1.1/viewpager-28.0.0.aar/c2376284219d511601a0fd8e88be7828/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:coordinatorlayout:28.0.0] /home/piotr/.gradle/caches/transforms-1/files-1.1/coordinatorlayout-28.0.0.aar/108e4ace5fb6e21c5f451c7aae80ff27/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:coordinatorlayout:28.0.0] /home/piotr/.gradle/caches/transforms-1/files-1.1/coordinatorlayout-28.0.0.aar/108e4ace5fb6e21c5f451c7aae80ff27/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:drawerlayout:28.0.0] /home/piotr/.gradle/caches/transforms-1/files-1.1/drawerlayout-28.0.0.aar/d47eacb1aae14bffad09cd6c979fcc26/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:drawerlayout:28.0.0] /home/piotr/.gradle/caches/transforms-1/files-1.1/drawerlayout-28.0.0.aar/d47eacb1aae14bffad09cd6c979fcc26/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:slidingpanelayout:28.0.0] /home/piotr/.gradle/caches/transforms-1/files-1.1/slidingpanelayout-28.0.0.aar/e9f38ea3306fe8ff8bdc4d9293c47d8d/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:slidingpanelayout:28.0.0] /home/piotr/.gradle/caches/transforms-1/files-1.1/slidingpanelayout-28.0.0.aar/e9f38ea3306fe8ff8bdc4d9293c47d8d/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:customview:28.0.0] /home/piotr/.gradle/caches/transforms-1/files-1.1/customview-28.0.0.aar/2efb35d870a87e10d08b08c135fac841/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:customview:28.0.0] /home/piotr/.gradle/caches/transforms-1/files-1.1/customview-28.0.0.aar/2efb35d870a87e10d08b08c135fac841/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:swiperefreshlayout:28.0.0] /home/piotr/.gradle/caches/transforms-1/files-1.1/swiperefreshlayout-28.0.0.aar/a05f79e10f91c4b6e63e8148eb805178/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:swiperefreshlayout:28.0.0] /home/piotr/.gradle/caches/transforms-1/files-1.1/swiperefreshlayout-28.0.0.aar/a05f79e10f91c4b6e63e8148eb805178/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:asynclayoutinflater:28.0.0] /home/piotr/.gradle/caches/transforms-1/files-1.1/asynclayoutinflater-28.0.0.aar/5281f1dad892df7beb1cba793a4fd831/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:asynclayoutinflater:28.0.0] /home/piotr/.gradle/caches/transforms-1/files-1.1/asynclayoutinflater-28.0.0.aar/5281f1dad892df7beb1cba793a4fd831/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-vector-drawable:28.0.0] /home/piotr/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-28.0.0.aar/cae218bc1c6419d0a7c8c2d59a52bc9e/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-vector-drawable:28.0.0] /home/piotr/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-28.0.0.aar/cae218bc1c6419d0a7c8c2d59a52bc9e/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-media-compat:28.0.0] /home/piotr/.gradle/caches/transforms-1/files-1.1/support-media-compat-28.0.0.aar/99a913d3140e9aa68978b79b8fd9dcff/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-media-compat:28.0.0] /home/piotr/.gradle/caches/transforms-1/files-1.1/support-media-compat-28.0.0.aar/99a913d3140e9aa68978b79b8fd9dcff/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-compat:28.0.0] /home/piotr/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/0d9c945beaf270090990063ee6f8d874/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-compat:28.0.0] /home/piotr/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/0d9c945beaf270090990063ee6f8d874/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:runtime:1.1.1] /home/piotr/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/98a884add244d136a5f2dcb30ef5d649/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:runtime:1.1.1] /home/piotr/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/98a884add244d136a5f2dcb30ef5d649/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.persistence:db-framework:1.1.1] /home/piotr/.gradle/caches/transforms-1/files-1.1/db-framework-1.1.1.aar/3dfd2d57b55c0136e3943569d1fdca33/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.persistence:db-framework:1.1.1] /home/piotr/.gradle/caches/transforms-1/files-1.1/db-framework-1.1.1.aar/3dfd2d57b55c0136e3943569d1fdca33/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.persistence:db:1.1.1] /home/piotr/.gradle/caches/transforms-1/files-1.1/db-1.1.1.aar/45e8f3fc25247d3c6981930abf177a7a/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.persistence:db:1.1.1] /home/piotr/.gradle/caches/transforms-1/files-1.1/db-1.1.1.aar/45e8f3fc25247d3c6981930abf177a7a/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:livedata:1.1.1] /home/piotr/.gradle/caches/transforms-1/files-1.1/livedata-1.1.1.aar/9c79098bca39b7b420f8ccb0b88214cf/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:livedata:1.1.1] /home/piotr/.gradle/caches/transforms-1/files-1.1/livedata-1.1.1.aar/9c79098bca39b7b420f8ccb0b88214cf/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /home/piotr/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.1.aar/9f607a2b76a48ed9df16da45c83423a8/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /home/piotr/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.1.aar/9f607a2b76a48ed9df16da45c83423a8/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.core:runtime:1.1.1] /home/piotr/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/766467490f54b51e30f4fa98611e5dec/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.core:runtime:1.1.1] /home/piotr/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/766467490f54b51e30f4fa98611e5dec/AndroidManifest.xml:20:5-44
-MERGED from [com.github.bumptech.glide:gifdecoder:4.8.0] /home/piotr/.gradle/caches/transforms-1/files-1.1/gifdecoder-4.8.0.aar/2f662f1c0c1fb19e44c35f11d18873e6/AndroidManifest.xml:5:5-7:41
-MERGED from [com.github.bumptech.glide:gifdecoder:4.8.0] /home/piotr/.gradle/caches/transforms-1/files-1.1/gifdecoder-4.8.0.aar/2f662f1c0c1fb19e44c35f11d18873e6/AndroidManifest.xml:5:5-7:41
-MERGED from [com.android.support:documentfile:28.0.0] /home/piotr/.gradle/caches/transforms-1/files-1.1/documentfile-28.0.0.aar/608b6cd14aee42937841bcdac6e0cf85/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:documentfile:28.0.0] /home/piotr/.gradle/caches/transforms-1/files-1.1/documentfile-28.0.0.aar/608b6cd14aee42937841bcdac6e0cf85/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:localbroadcastmanager:28.0.0] /home/piotr/.gradle/caches/transforms-1/files-1.1/localbroadcastmanager-28.0.0.aar/fc47fb9e1e3cd6a54652ee7095260808/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:localbroadcastmanager:28.0.0] /home/piotr/.gradle/caches/transforms-1/files-1.1/localbroadcastmanager-28.0.0.aar/fc47fb9e1e3cd6a54652ee7095260808/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:print:28.0.0] /home/piotr/.gradle/caches/transforms-1/files-1.1/print-28.0.0.aar/fd993d445ce54f8fdbc535a047b089ed/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:print:28.0.0] /home/piotr/.gradle/caches/transforms-1/files-1.1/print-28.0.0.aar/fd993d445ce54f8fdbc535a047b089ed/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /home/piotr/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.1.aar/09bad4b3d43f77ff602012edfc1a127a/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /home/piotr/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.1.aar/09bad4b3d43f77ff602012edfc1a127a/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:interpolator:28.0.0] /home/piotr/.gradle/caches/transforms-1/files-1.1/interpolator-28.0.0.aar/6e186f04350df2fd81b8e3c610b50145/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:interpolator:28.0.0] /home/piotr/.gradle/caches/transforms-1/files-1.1/interpolator-28.0.0.aar/6e186f04350df2fd81b8e3c610b50145/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:cursoradapter:28.0.0] /home/piotr/.gradle/caches/transforms-1/files-1.1/cursoradapter-28.0.0.aar/d46346c881f0d46bce749e8b37c62d02/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:cursoradapter:28.0.0] /home/piotr/.gradle/caches/transforms-1/files-1.1/cursoradapter-28.0.0.aar/d46346c881f0d46bce749e8b37c62d02/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:versionedparcelable:28.0.0] /home/piotr/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0.aar/3d4913b70350f87fbc92cf001c6c64ec/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:versionedparcelable:28.0.0] /home/piotr/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0.aar/3d4913b70350f87fbc92cf001c6c64ec/AndroidManifest.xml:20:5-44
-INJECTED from /home/piotr/develop/MotivProjects/XapoTest/app/src/main/AndroidManifest.xml
-INJECTED from /home/piotr/develop/MotivProjects/XapoTest/app/src/main/AndroidManifest.xml
+INJECTED from /home/piotr/develop/AndroidStudioProjects/GitHubApp/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /home/piotr/develop/AndroidStudioProjects/GitHubApp/app/src/main/AndroidManifest.xml
+INJECTED from /home/piotr/develop/AndroidStudioProjects/GitHubApp/app/src/main/AndroidManifest.xml
+MERGED from [com.android.databinding:adapters:3.2.0-beta05] /home/piotr/.gradle/caches/transforms-1/files-1.1/adapters-3.2.0-beta05.aar/4d381d1c893953127d7145be559c89b8/AndroidManifest.xml:22:5-44
+MERGED from [com.android.databinding:adapters:3.2.0-beta05] /home/piotr/.gradle/caches/transforms-1/files-1.1/adapters-3.2.0-beta05.aar/4d381d1c893953127d7145be559c89b8/AndroidManifest.xml:22:5-44
+MERGED from [com.android.databinding:library:3.2.0-beta05] /home/piotr/.gradle/caches/transforms-1/files-1.1/library-3.2.0-beta05.aar/46948931517a3656b783d62d33ba2fe3/AndroidManifest.xml:22:5-44
+MERGED from [com.android.databinding:library:3.2.0-beta05] /home/piotr/.gradle/caches/transforms-1/files-1.1/library-3.2.0-beta05.aar/46948931517a3656b783d62d33ba2fe3/AndroidManifest.xml:22:5-44
+MERGED from [com.google.dagger:dagger-android-support:2.16] /home/piotr/.gradle/caches/transforms-1/files-1.1/dagger-android-support-2.16.aar/dc823d09cecc564dafd25d2a02cf1d32/AndroidManifest.xml:20:5-44
+MERGED from [com.google.dagger:dagger-android-support:2.16] /home/piotr/.gradle/caches/transforms-1/files-1.1/dagger-android-support-2.16.aar/dc823d09cecc564dafd25d2a02cf1d32/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.navigation:navigation-ui:1.0.0-alpha06] /home/piotr/.gradle/caches/transforms-1/files-1.1/navigation-ui-1.0.0-alpha06.aar/30f6ec760c33c2c28925a7ec7fd47f5b/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.navigation:navigation-ui:1.0.0-alpha06] /home/piotr/.gradle/caches/transforms-1/files-1.1/navigation-ui-1.0.0-alpha06.aar/30f6ec760c33c2c28925a7ec7fd47f5b/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:design:27.1.1] /home/piotr/.gradle/caches/transforms-1/files-1.1/design-27.1.1.aar/cd6b13d7badc64f5dc0d507192c15201/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:design:27.1.1] /home/piotr/.gradle/caches/transforms-1/files-1.1/design-27.1.1.aar/cd6b13d7badc64f5dc0d507192c15201/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:28.0.0] /home/piotr/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/3c10427313027703026e6ed69847bb18/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:28.0.0] /home/piotr/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/3c10427313027703026e6ed69847bb18/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.persistence.room:runtime:1.1.1] /home/piotr/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/081896b603d77654e58aee316400316f/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.persistence.room:runtime:1.1.1] /home/piotr/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/081896b603d77654e58aee316400316f/AndroidManifest.xml:20:5-44
+MERGED from [com.github.bumptech.glide:glide:4.8.0] /home/piotr/.gradle/caches/transforms-1/files-1.1/glide-4.8.0.aar/f93fe1d7657e786a495843de3dca1028/AndroidManifest.xml:6:5-8:41
+MERGED from [com.github.bumptech.glide:glide:4.8.0] /home/piotr/.gradle/caches/transforms-1/files-1.1/glide-4.8.0.aar/f93fe1d7657e786a495843de3dca1028/AndroidManifest.xml:6:5-8:41
+MERGED from [com.android.support:support-v4:28.0.0] /home/piotr/.gradle/caches/transforms-1/files-1.1/support-v4-28.0.0.aar/c06f561afbaa318d70dff998d2eb85bc/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v4:28.0.0] /home/piotr/.gradle/caches/transforms-1/files-1.1/support-v4-28.0.0.aar/c06f561afbaa318d70dff998d2eb85bc/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.navigation:navigation-fragment:1.0.0-alpha06] /home/piotr/.gradle/caches/transforms-1/files-1.1/navigation-fragment-1.0.0-alpha06.aar/a756b41597a9841cf793e471b3c5e16e/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.navigation:navigation-fragment:1.0.0-alpha06] /home/piotr/.gradle/caches/transforms-1/files-1.1/navigation-fragment-1.0.0-alpha06.aar/a756b41597a9841cf793e471b3c5e16e/AndroidManifest.xml:20:5-44
+MERGED from [com.google.dagger:dagger-android:2.16] /home/piotr/.gradle/caches/transforms-1/files-1.1/dagger-android-2.16.aar/5e72172473b486b554badb513e44de3f/AndroidManifest.xml:20:5-44
+MERGED from [com.google.dagger:dagger-android:2.16] /home/piotr/.gradle/caches/transforms-1/files-1.1/dagger-android-2.16.aar/5e72172473b486b554badb513e44de3f/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:recyclerview-v7:28.0.0] /home/piotr/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-28.0.0.aar/5cd7a28ce8a078ecbe51d5aa1dcdbc31/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:recyclerview-v7:28.0.0] /home/piotr/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-28.0.0.aar/5cd7a28ce8a078ecbe51d5aa1dcdbc31/AndroidManifest.xml:20:5-44
+MERGED from [io.reactivex.rxjava2:rxandroid:2.0.2] /home/piotr/.gradle/caches/transforms-1/files-1.1/rxandroid-2.0.2.aar/df3488ef5c7f8a499ce2cbf71476afa0/AndroidManifest.xml:19:5-43
+MERGED from [io.reactivex.rxjava2:rxandroid:2.0.2] /home/piotr/.gradle/caches/transforms-1/files-1.1/rxandroid-2.0.2.aar/df3488ef5c7f8a499ce2cbf71476afa0/AndroidManifest.xml:19:5-43
+MERGED from [de.hdodenhof:circleimageview:2.2.0] /home/piotr/.gradle/caches/transforms-1/files-1.1/circleimageview-2.2.0.aar/73440c7722599dbcb81ee907e5075e32/AndroidManifest.xml:5:5-7:41
+MERGED from [de.hdodenhof:circleimageview:2.2.0] /home/piotr/.gradle/caches/transforms-1/files-1.1/circleimageview-2.2.0.aar/73440c7722599dbcb81ee907e5075e32/AndroidManifest.xml:5:5-7:41
+MERGED from [android.arch.navigation:navigation-runtime:1.0.0-alpha06] /home/piotr/.gradle/caches/transforms-1/files-1.1/navigation-runtime-1.0.0-alpha06.aar/8645f16f24b0fbefcb50129b8f5a9a75/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.navigation:navigation-runtime:1.0.0-alpha06] /home/piotr/.gradle/caches/transforms-1/files-1.1/navigation-runtime-1.0.0-alpha06.aar/8645f16f24b0fbefcb50129b8f5a9a75/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.navigation:navigation-common:1.0.0-alpha06] /home/piotr/.gradle/caches/transforms-1/files-1.1/navigation-common-1.0.0-alpha06.aar/0bc65f6cef301765fff54545332ee6dc/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.navigation:navigation-common:1.0.0-alpha06] /home/piotr/.gradle/caches/transforms-1/files-1.1/navigation-common-1.0.0-alpha06.aar/0bc65f6cef301765fff54545332ee6dc/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:27.1.1] /home/piotr/.gradle/caches/transforms-1/files-1.1/transition-27.1.1.aar/cef13cc74152475e8dbff1f5595621e5/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:27.1.1] /home/piotr/.gradle/caches/transforms-1/files-1.1/transition-27.1.1.aar/cef13cc74152475e8dbff1f5595621e5/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:28.0.0] /home/piotr/.gradle/caches/transforms-1/files-1.1/support-fragment-28.0.0.aar/8ed23dd0ebf9eed3fc83501e8dec5c8a/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:28.0.0] /home/piotr/.gradle/caches/transforms-1/files-1.1/support-fragment-28.0.0.aar/8ed23dd0ebf9eed3fc83501e8dec5c8a/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] /home/piotr/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-28.0.0.aar/8fcc8cf5224a3ec83ca09cd4d56554cb/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] /home/piotr/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-28.0.0.aar/8fcc8cf5224a3ec83ca09cd4d56554cb/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:28.0.0] /home/piotr/.gradle/caches/transforms-1/files-1.1/support-core-ui-28.0.0.aar/d4e6c17124cb609ed2861018aa715e4c/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:28.0.0] /home/piotr/.gradle/caches/transforms-1/files-1.1/support-core-ui-28.0.0.aar/d4e6c17124cb609ed2861018aa715e4c/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:28.0.0] /home/piotr/.gradle/caches/transforms-1/files-1.1/support-core-utils-28.0.0.aar/4209bd654ea9afc57b60e1208d5c50b3/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:28.0.0] /home/piotr/.gradle/caches/transforms-1/files-1.1/support-core-utils-28.0.0.aar/4209bd654ea9afc57b60e1208d5c50b3/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:loader:28.0.0] /home/piotr/.gradle/caches/transforms-1/files-1.1/loader-28.0.0.aar/0978008963a93acde2287ee3ac998335/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:loader:28.0.0] /home/piotr/.gradle/caches/transforms-1/files-1.1/loader-28.0.0.aar/0978008963a93acde2287ee3ac998335/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:viewpager:28.0.0] /home/piotr/.gradle/caches/transforms-1/files-1.1/viewpager-28.0.0.aar/1d3f0b8d20acfd565ae0095522466670/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:viewpager:28.0.0] /home/piotr/.gradle/caches/transforms-1/files-1.1/viewpager-28.0.0.aar/1d3f0b8d20acfd565ae0095522466670/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:coordinatorlayout:28.0.0] /home/piotr/.gradle/caches/transforms-1/files-1.1/coordinatorlayout-28.0.0.aar/e7ee3cf8ff1fc2ba6218c1c5020be36b/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:coordinatorlayout:28.0.0] /home/piotr/.gradle/caches/transforms-1/files-1.1/coordinatorlayout-28.0.0.aar/e7ee3cf8ff1fc2ba6218c1c5020be36b/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:drawerlayout:28.0.0] /home/piotr/.gradle/caches/transforms-1/files-1.1/drawerlayout-28.0.0.aar/aa6115eab70451defd5a92dc84da3509/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:drawerlayout:28.0.0] /home/piotr/.gradle/caches/transforms-1/files-1.1/drawerlayout-28.0.0.aar/aa6115eab70451defd5a92dc84da3509/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:slidingpanelayout:28.0.0] /home/piotr/.gradle/caches/transforms-1/files-1.1/slidingpanelayout-28.0.0.aar/b55ac7b6caa4837ea3a8037e399340af/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:slidingpanelayout:28.0.0] /home/piotr/.gradle/caches/transforms-1/files-1.1/slidingpanelayout-28.0.0.aar/b55ac7b6caa4837ea3a8037e399340af/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:customview:28.0.0] /home/piotr/.gradle/caches/transforms-1/files-1.1/customview-28.0.0.aar/adb6c993623d6e1162f5d70d270fddd6/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:customview:28.0.0] /home/piotr/.gradle/caches/transforms-1/files-1.1/customview-28.0.0.aar/adb6c993623d6e1162f5d70d270fddd6/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] /home/piotr/.gradle/caches/transforms-1/files-1.1/swiperefreshlayout-28.0.0.aar/facaa83eb91110bcdc8ebc63b925a1ec/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] /home/piotr/.gradle/caches/transforms-1/files-1.1/swiperefreshlayout-28.0.0.aar/facaa83eb91110bcdc8ebc63b925a1ec/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] /home/piotr/.gradle/caches/transforms-1/files-1.1/asynclayoutinflater-28.0.0.aar/f91438d325a8fe0adb28a942bf31d7fe/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] /home/piotr/.gradle/caches/transforms-1/files-1.1/asynclayoutinflater-28.0.0.aar/f91438d325a8fe0adb28a942bf31d7fe/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:28.0.0] /home/piotr/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-28.0.0.aar/1c87691b18d8227bb0b069febbcc4714/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:28.0.0] /home/piotr/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-28.0.0.aar/1c87691b18d8227bb0b069febbcc4714/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-media-compat:28.0.0] /home/piotr/.gradle/caches/transforms-1/files-1.1/support-media-compat-28.0.0.aar/34046f4877b447ec60597e369512954e/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-media-compat:28.0.0] /home/piotr/.gradle/caches/transforms-1/files-1.1/support-media-compat-28.0.0.aar/34046f4877b447ec60597e369512954e/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:28.0.0] /home/piotr/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/c04cc111dba1d8a41d7c96cc804f40f9/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:28.0.0] /home/piotr/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/c04cc111dba1d8a41d7c96cc804f40f9/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.1] /home/piotr/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/6f6126698585def463e6ed72825c6510/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.1] /home/piotr/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/6f6126698585def463e6ed72825c6510/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.persistence:db-framework:1.1.1] /home/piotr/.gradle/caches/transforms-1/files-1.1/db-framework-1.1.1.aar/a1f403bc1e56e941ce3a8275c4521e49/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.persistence:db-framework:1.1.1] /home/piotr/.gradle/caches/transforms-1/files-1.1/db-framework-1.1.1.aar/a1f403bc1e56e941ce3a8275c4521e49/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.persistence:db:1.1.1] /home/piotr/.gradle/caches/transforms-1/files-1.1/db-1.1.1.aar/f6a9aa57b82c0856aba03a329bdaaa3a/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.persistence:db:1.1.1] /home/piotr/.gradle/caches/transforms-1/files-1.1/db-1.1.1.aar/f6a9aa57b82c0856aba03a329bdaaa3a/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata:1.1.1] /home/piotr/.gradle/caches/transforms-1/files-1.1/livedata-1.1.1.aar/c6b376e2141bafe3368a4c2133c0ce64/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata:1.1.1] /home/piotr/.gradle/caches/transforms-1/files-1.1/livedata-1.1.1.aar/c6b376e2141bafe3368a4c2133c0ce64/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /home/piotr/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.1.aar/8f63f1a8c24f5227656c0ab1c2ce1961/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /home/piotr/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.1.aar/8f63f1a8c24f5227656c0ab1c2ce1961/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.1] /home/piotr/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/2d2891dadeabcf7d2297d58e710a09a7/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.1] /home/piotr/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/2d2891dadeabcf7d2297d58e710a09a7/AndroidManifest.xml:20:5-44
+MERGED from [com.github.bumptech.glide:gifdecoder:4.8.0] /home/piotr/.gradle/caches/transforms-1/files-1.1/gifdecoder-4.8.0.aar/2fb706a4ac4b5d2c1e07fd8d54be21c7/AndroidManifest.xml:5:5-7:41
+MERGED from [com.github.bumptech.glide:gifdecoder:4.8.0] /home/piotr/.gradle/caches/transforms-1/files-1.1/gifdecoder-4.8.0.aar/2fb706a4ac4b5d2c1e07fd8d54be21c7/AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support:documentfile:28.0.0] /home/piotr/.gradle/caches/transforms-1/files-1.1/documentfile-28.0.0.aar/05d3e2be9fb16d7417c60c37f4ea7552/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:documentfile:28.0.0] /home/piotr/.gradle/caches/transforms-1/files-1.1/documentfile-28.0.0.aar/05d3e2be9fb16d7417c60c37f4ea7552/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] /home/piotr/.gradle/caches/transforms-1/files-1.1/localbroadcastmanager-28.0.0.aar/5d916f8958960a73ecc351be2627ce55/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] /home/piotr/.gradle/caches/transforms-1/files-1.1/localbroadcastmanager-28.0.0.aar/5d916f8958960a73ecc351be2627ce55/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:print:28.0.0] /home/piotr/.gradle/caches/transforms-1/files-1.1/print-28.0.0.aar/c02e4a56c00644749aaa6d01fb7892d6/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:print:28.0.0] /home/piotr/.gradle/caches/transforms-1/files-1.1/print-28.0.0.aar/c02e4a56c00644749aaa6d01fb7892d6/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /home/piotr/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.1.aar/29e8affd4b71e338309655ef758635e5/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /home/piotr/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.1.aar/29e8affd4b71e338309655ef758635e5/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:interpolator:28.0.0] /home/piotr/.gradle/caches/transforms-1/files-1.1/interpolator-28.0.0.aar/66571438227e158eaaf316227b257657/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:interpolator:28.0.0] /home/piotr/.gradle/caches/transforms-1/files-1.1/interpolator-28.0.0.aar/66571438227e158eaaf316227b257657/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cursoradapter:28.0.0] /home/piotr/.gradle/caches/transforms-1/files-1.1/cursoradapter-28.0.0.aar/c60144223c9fa2481197418547cca864/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cursoradapter:28.0.0] /home/piotr/.gradle/caches/transforms-1/files-1.1/cursoradapter-28.0.0.aar/c60144223c9fa2481197418547cca864/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:versionedparcelable:28.0.0] /home/piotr/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0.aar/6570063491b4191558fca9797411ac0e/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:versionedparcelable:28.0.0] /home/piotr/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0.aar/6570063491b4191558fca9797411ac0e/AndroidManifest.xml:20:5-44
+INJECTED from /home/piotr/develop/AndroidStudioProjects/GitHubApp/app/src/main/AndroidManifest.xml
+INJECTED from /home/piotr/develop/AndroidStudioProjects/GitHubApp/app/src/main/AndroidManifest.xml
 	android:targetSdkVersion
-		INJECTED from /home/piotr/develop/MotivProjects/XapoTest/app/src/main/AndroidManifest.xml
-		ADDED from /home/piotr/develop/MotivProjects/XapoTest/app/src/main/AndroidManifest.xml
-		INJECTED from /home/piotr/develop/MotivProjects/XapoTest/app/src/main/AndroidManifest.xml
+		INJECTED from /home/piotr/develop/AndroidStudioProjects/GitHubApp/app/src/main/AndroidManifest.xml
+		ADDED from /home/piotr/develop/AndroidStudioProjects/GitHubApp/app/src/main/AndroidManifest.xml
+		INJECTED from /home/piotr/develop/AndroidStudioProjects/GitHubApp/app/src/main/AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from /home/piotr/develop/MotivProjects/XapoTest/app/src/main/AndroidManifest.xml
-		ADDED from /home/piotr/develop/MotivProjects/XapoTest/app/src/main/AndroidManifest.xml
-		INJECTED from /home/piotr/develop/MotivProjects/XapoTest/app/src/main/AndroidManifest.xml
+		INJECTED from /home/piotr/develop/AndroidStudioProjects/GitHubApp/app/src/main/AndroidManifest.xml
+		ADDED from /home/piotr/develop/AndroidStudioProjects/GitHubApp/app/src/main/AndroidManifest.xml
+		INJECTED from /home/piotr/develop/AndroidStudioProjects/GitHubApp/app/src/main/AndroidManifest.xml

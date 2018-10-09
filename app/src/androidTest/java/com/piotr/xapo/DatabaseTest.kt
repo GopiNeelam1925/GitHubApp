@@ -1,14 +1,11 @@
 package com.piotr.xapo
 
-import com.piotr.xapo.model.User
 import org.junit.After
 import android.arch.persistence.room.Room
 import android.support.test.InstrumentationRegistry
 import android.support.test.runner.AndroidJUnit4
 import com.piotr.xapo.dao.MyRoomDatabase
 import org.junit.Before
-import com.piotr.xapo.dao.UserDao
-import org.hamcrest.CoreMatchers.equalTo
 import org.junit.Assert.*
 import org.junit.Test
 import org.junit.runner.RunWith

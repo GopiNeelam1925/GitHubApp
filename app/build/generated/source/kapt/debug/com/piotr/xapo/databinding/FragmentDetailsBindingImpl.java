@@ -14,17 +14,13 @@ public class FragmentDetailsBindingImpl extends FragmentDetailsBinding  {
     static {
         sIncludes = null;
         sViewsWithIds = new android.util.SparseIntArray();
-        sViewsWithIds.put(R.id.appbar, 13);
+        sViewsWithIds.put(R.id.appbar, 11);
     }
     // views
     @NonNull
     private final android.support.design.widget.CoordinatorLayout mboundView0;
     @NonNull
     private final android.widget.TextView mboundView10;
-    @NonNull
-    private final android.widget.TextView mboundView11;
-    @NonNull
-    private final android.widget.TextView mboundView12;
     @NonNull
     private final android.widget.TextView mboundView4;
     @NonNull
@@ -43,11 +39,11 @@ public class FragmentDetailsBindingImpl extends FragmentDetailsBinding  {
     // Inverse Binding Event Handlers
 
     public FragmentDetailsBindingImpl(@Nullable android.databinding.DataBindingComponent bindingComponent, @NonNull View root) {
-        this(bindingComponent, root, mapBindings(bindingComponent, root, 14, sIncludes, sViewsWithIds));
+        this(bindingComponent, root, mapBindings(bindingComponent, root, 12, sIncludes, sViewsWithIds));
     }
     private FragmentDetailsBindingImpl(android.databinding.DataBindingComponent bindingComponent, View root, Object[] bindings) {
         super(bindingComponent, root, 0
-            , (android.support.design.widget.AppBarLayout) bindings[13]
+            , (android.support.design.widget.AppBarLayout) bindings[11]
             , (android.support.design.widget.CollapsingToolbarLayout) bindings[1]
             , (de.hdodenhof.circleimageview.CircleImageView) bindings[2]
             , (android.support.v7.widget.Toolbar) bindings[3]
@@ -58,10 +54,6 @@ public class FragmentDetailsBindingImpl extends FragmentDetailsBinding  {
         this.mboundView0.setTag(null);
         this.mboundView10 = (android.widget.TextView) bindings[10];
         this.mboundView10.setTag(null);
-        this.mboundView11 = (android.widget.TextView) bindings[11];
-        this.mboundView11.setTag(null);
-        this.mboundView12 = (android.widget.TextView) bindings[12];
-        this.mboundView12.setTag(null);
         this.mboundView4 = (android.widget.TextView) bindings[4];
         this.mboundView4.setTag(null);
         this.mboundView5 = (android.widget.TextView) bindings[5];
@@ -101,8 +93,8 @@ public class FragmentDetailsBindingImpl extends FragmentDetailsBinding  {
     @Override
     public boolean setVariable(int variableId, @Nullable Object variable)  {
         boolean variableSet = true;
-        if (BR.user == variableId) {
-            setUser((com.piotr.xapo.model.User) variable);
+        if (BR.repository == variableId) {
+            setRepository((com.piotr.xapo.model.Repository) variable);
         }
         else {
             variableSet = false;
@@ -110,12 +102,12 @@ public class FragmentDetailsBindingImpl extends FragmentDetailsBinding  {
             return variableSet;
     }
 
-    public void setUser(@Nullable com.piotr.xapo.model.User User) {
-        this.mUser = User;
+    public void setRepository(@Nullable com.piotr.xapo.model.Repository Repository) {
+        this.mRepository = Repository;
         synchronized(this) {
             mDirtyFlags |= 0x1L;
         }
-        notifyPropertyChanged(BR.user);
+        notifyPropertyChanged(BR.repository);
         super.requestRebind();
     }
 
@@ -133,61 +125,64 @@ public class FragmentDetailsBindingImpl extends FragmentDetailsBinding  {
             dirtyFlags = mDirtyFlags;
             mDirtyFlags = 0;
         }
-        java.lang.String userFollowingUrl = null;
-        java.lang.String userGistsUrl = null;
-        java.lang.String userOrganizationsUrl = null;
-        java.lang.String userHtmlUrl = null;
-        java.lang.String userReposUrl = null;
-        java.lang.String userEventsUrl = null;
-        java.lang.String userSubscriptionsUrl = null;
-        com.piotr.xapo.model.User user = mUser;
-        java.lang.String userAvatarUrl = null;
-        java.lang.String userFollowersUrl = null;
-        java.lang.String userLogin = null;
+        java.lang.String repositoryAuthor = null;
+        java.lang.String integerToStringRepositoryStars = null;
+        com.piotr.xapo.model.Repository repository = mRepository;
+        int repositoryStars = 0;
+        java.lang.String repositoryUrl = null;
+        int repositoryCurrentPeriodStars = 0;
+        java.lang.String integerToStringRepositoryCurrentPeriodStars = null;
+        java.lang.String repositoryImageUrl = null;
+        java.lang.String repositoryName = null;
+        java.lang.String integerToStringRepositoryForks = null;
+        java.lang.String repositoryLanguage = null;
+        int repositoryForks = 0;
 
         if ((dirtyFlags & 0x3L) != 0) {
 
 
 
-                if (user != null) {
-                    // read user.following_url
-                    userFollowingUrl = user.getFollowing_url();
-                    // read user.gists_url
-                    userGistsUrl = user.getGists_url();
-                    // read user.organizations_url
-                    userOrganizationsUrl = user.getOrganizations_url();
-                    // read user.html_url
-                    userHtmlUrl = user.getHtml_url();
-                    // read user.repos_url
-                    userReposUrl = user.getRepos_url();
-                    // read user.events_url
-                    userEventsUrl = user.getEvents_url();
-                    // read user.subscriptions_url
-                    userSubscriptionsUrl = user.getSubscriptions_url();
-                    // read user.avatar_url
-                    userAvatarUrl = user.getAvatar_url();
-                    // read user.followers_url
-                    userFollowersUrl = user.getFollowers_url();
-                    // read user.login
-                    userLogin = user.getLogin();
+                if (repository != null) {
+                    // read repository.author
+                    repositoryAuthor = repository.getAuthor();
+                    // read repository.stars
+                    repositoryStars = repository.getStars();
+                    // read repository.url
+                    repositoryUrl = repository.getUrl();
+                    // read repository.currentPeriodStars
+                    repositoryCurrentPeriodStars = repository.getCurrentPeriodStars();
+                    // read repository.imageUrl
+                    repositoryImageUrl = repository.getImageUrl();
+                    // read repository.name
+                    repositoryName = repository.getName();
+                    // read repository.language
+                    repositoryLanguage = repository.getLanguage();
+                    // read repository.forks
+                    repositoryForks = repository.getForks();
                 }
+
+
+                // read Integer.toString(repository.stars)
+                integerToStringRepositoryStars = java.lang.Integer.toString(repositoryStars);
+                // read Integer.toString(repository.currentPeriodStars)
+                integerToStringRepositoryCurrentPeriodStars = java.lang.Integer.toString(repositoryCurrentPeriodStars);
+                // read Integer.toString(repository.forks)
+                integerToStringRepositoryForks = java.lang.Integer.toString(repositoryForks);
         }
         // batch finished
         if ((dirtyFlags & 0x3L) != 0) {
             // api target 1
 
-            this.collapsing.setTitle(userLogin);
-            com.piotr.xapo.Utils.ImageBindingAdapter.setImageUrl(this.ivProfile, userAvatarUrl);
-            android.databinding.adapters.TextViewBindingAdapter.setText(this.mboundView10, userReposUrl);
-            android.databinding.adapters.TextViewBindingAdapter.setText(this.mboundView11, userSubscriptionsUrl);
-            android.databinding.adapters.TextViewBindingAdapter.setText(this.mboundView12, userHtmlUrl);
-            android.databinding.adapters.TextViewBindingAdapter.setText(this.mboundView4, userLogin);
-            android.databinding.adapters.TextViewBindingAdapter.setText(this.mboundView5, userEventsUrl);
-            android.databinding.adapters.TextViewBindingAdapter.setText(this.mboundView6, userFollowersUrl);
-            android.databinding.adapters.TextViewBindingAdapter.setText(this.mboundView7, userFollowingUrl);
-            android.databinding.adapters.TextViewBindingAdapter.setText(this.mboundView8, userGistsUrl);
-            android.databinding.adapters.TextViewBindingAdapter.setText(this.mboundView9, userOrganizationsUrl);
-            this.toolbar.setTitle(userLogin);
+            this.collapsing.setTitle(repositoryName);
+            com.piotr.xapo.Utils.ImageBindingAdapter.setImageUrl(this.ivProfile, repositoryImageUrl);
+            android.databinding.adapters.TextViewBindingAdapter.setText(this.mboundView10, integerToStringRepositoryStars);
+            android.databinding.adapters.TextViewBindingAdapter.setText(this.mboundView4, repositoryAuthor);
+            android.databinding.adapters.TextViewBindingAdapter.setText(this.mboundView5, repositoryUrl);
+            android.databinding.adapters.TextViewBindingAdapter.setText(this.mboundView6, integerToStringRepositoryCurrentPeriodStars);
+            android.databinding.adapters.TextViewBindingAdapter.setText(this.mboundView7, integerToStringRepositoryForks);
+            android.databinding.adapters.TextViewBindingAdapter.setText(this.mboundView8, repositoryLanguage);
+            android.databinding.adapters.TextViewBindingAdapter.setText(this.mboundView9, repositoryImageUrl);
+            this.toolbar.setTitle(repositoryName);
         }
     }
     // Listener Stub Implementations
@@ -195,7 +190,7 @@ public class FragmentDetailsBindingImpl extends FragmentDetailsBinding  {
     // dirty flag
     private  long mDirtyFlags = 0xffffffffffffffffL;
     /* flag mapping
-        flag 0 (0x1L): user
+        flag 0 (0x1L): repository
         flag 1 (0x2L): null
     flag mapping end*/
     //end

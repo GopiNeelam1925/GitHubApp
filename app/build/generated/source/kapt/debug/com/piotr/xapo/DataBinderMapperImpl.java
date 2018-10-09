@@ -8,7 +8,7 @@ import android.util.SparseIntArray;
 import android.view.View;
 import com.piotr.xapo.databinding.FragmentDetailsBindingImpl;
 import com.piotr.xapo.databinding.FragmentListBindingImpl;
-import com.piotr.xapo.databinding.RowUserBindingImpl;
+import com.piotr.xapo.databinding.RowRepositoryBindingImpl;
 import java.lang.IllegalArgumentException;
 import java.lang.Integer;
 import java.lang.Object;
@@ -24,14 +24,14 @@ public class DataBinderMapperImpl extends DataBinderMapper {
 
   private static final int LAYOUT_FRAGMENTLIST = 2;
 
-  private static final int LAYOUT_ROWUSER = 3;
+  private static final int LAYOUT_ROWREPOSITORY = 3;
 
   private static final SparseIntArray INTERNAL_LAYOUT_ID_LOOKUP = new SparseIntArray(3);
 
   static {
     INTERNAL_LAYOUT_ID_LOOKUP.put(com.piotr.xapo.R.layout.fragment_details, LAYOUT_FRAGMENTDETAILS);
     INTERNAL_LAYOUT_ID_LOOKUP.put(com.piotr.xapo.R.layout.fragment_list, LAYOUT_FRAGMENTLIST);
-    INTERNAL_LAYOUT_ID_LOOKUP.put(com.piotr.xapo.R.layout.row_user, LAYOUT_ROWUSER);
+    INTERNAL_LAYOUT_ID_LOOKUP.put(com.piotr.xapo.R.layout.row_repository, LAYOUT_ROWREPOSITORY);
   }
 
   @Override
@@ -55,11 +55,11 @@ public class DataBinderMapperImpl extends DataBinderMapper {
           }
           throw new IllegalArgumentException("The tag for fragment_list is invalid. Received: " + tag);
         }
-        case  LAYOUT_ROWUSER: {
-          if ("layout/row_user_0".equals(tag)) {
-            return new RowUserBindingImpl(component, view);
+        case  LAYOUT_ROWREPOSITORY: {
+          if ("layout/row_repository_0".equals(tag)) {
+            return new RowRepositoryBindingImpl(component, view);
           }
-          throw new IllegalArgumentException("The tag for row_user is invalid. Received: " + tag);
+          throw new IllegalArgumentException("The tag for row_repository is invalid. Received: " + tag);
         }
       }
     }
@@ -110,7 +110,7 @@ public class DataBinderMapperImpl extends DataBinderMapper {
 
     static {
       sKeys.put(0, "_all");
-      sKeys.put(1, "user");
+      sKeys.put(1, "repository");
     }
   }
 
@@ -120,7 +120,7 @@ public class DataBinderMapperImpl extends DataBinderMapper {
     static {
       sKeys.put("layout/fragment_details_0", com.piotr.xapo.R.layout.fragment_details);
       sKeys.put("layout/fragment_list_0", com.piotr.xapo.R.layout.fragment_list);
-      sKeys.put("layout/row_user_0", com.piotr.xapo.R.layout.row_user);
+      sKeys.put("layout/row_repository_0", com.piotr.xapo.R.layout.row_repository);
     }
   }
 }

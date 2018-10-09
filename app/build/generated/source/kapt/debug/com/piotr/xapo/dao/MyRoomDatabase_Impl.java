@@ -21,21 +21,21 @@ import java.util.HashSet;
 
 @SuppressWarnings("unchecked")
 public class MyRoomDatabase_Impl extends MyRoomDatabase {
-  private volatile UserDao _userDao;
+  private volatile RepositoryDao _repositoryDao;
 
   @Override
   protected SupportSQLiteOpenHelper createOpenHelper(DatabaseConfiguration configuration) {
     final SupportSQLiteOpenHelper.Callback _openCallback = new RoomOpenHelper(configuration, new RoomOpenHelper.Delegate(1) {
       @Override
       public void createAllTables(SupportSQLiteDatabase _db) {
-        _db.execSQL("CREATE TABLE IF NOT EXISTS `user` (`login` TEXT NOT NULL, `id` REAL NOT NULL, `node_id` TEXT NOT NULL, `avatar_url` TEXT NOT NULL, `gravatar_id` TEXT NOT NULL, `url` TEXT NOT NULL, `html_url` TEXT NOT NULL, `followers_url` TEXT NOT NULL, `following_url` TEXT NOT NULL, `gists_url` TEXT NOT NULL, `starred_url` TEXT NOT NULL, `subscriptions_url` TEXT NOT NULL, `organizations_url` TEXT NOT NULL, `repos_url` TEXT NOT NULL, `events_url` TEXT NOT NULL, `received_events_url` TEXT NOT NULL, `type` TEXT NOT NULL, `site_admin` INTEGER NOT NULL, PRIMARY KEY(`id`))");
+        _db.execSQL("CREATE TABLE IF NOT EXISTS `repository` (`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `author` TEXT NOT NULL, `name` TEXT NOT NULL, `url` TEXT NOT NULL, `description` TEXT NOT NULL, `language` TEXT NOT NULL, `stars` INTEGER NOT NULL, `forks` INTEGER NOT NULL, `currentPeriodStars` INTEGER NOT NULL)");
         _db.execSQL("CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)");
-        _db.execSQL("INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, \"f81eb04041dd14a3ffad24080805df3e\")");
+        _db.execSQL("INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, \"c8a128f777f431784afad4353042f93a\")");
       }
 
       @Override
       public void dropAllTables(SupportSQLiteDatabase _db) {
-        _db.execSQL("DROP TABLE IF EXISTS `user`");
+        _db.execSQL("DROP TABLE IF EXISTS `repository`");
       }
 
       @Override
@@ -60,36 +60,27 @@ public class MyRoomDatabase_Impl extends MyRoomDatabase {
 
       @Override
       protected void validateMigration(SupportSQLiteDatabase _db) {
-        final HashMap<String, TableInfo.Column> _columnsUser = new HashMap<String, TableInfo.Column>(18);
-        _columnsUser.put("login", new TableInfo.Column("login", "TEXT", true, 0));
-        _columnsUser.put("id", new TableInfo.Column("id", "REAL", true, 1));
-        _columnsUser.put("node_id", new TableInfo.Column("node_id", "TEXT", true, 0));
-        _columnsUser.put("avatar_url", new TableInfo.Column("avatar_url", "TEXT", true, 0));
-        _columnsUser.put("gravatar_id", new TableInfo.Column("gravatar_id", "TEXT", true, 0));
-        _columnsUser.put("url", new TableInfo.Column("url", "TEXT", true, 0));
-        _columnsUser.put("html_url", new TableInfo.Column("html_url", "TEXT", true, 0));
-        _columnsUser.put("followers_url", new TableInfo.Column("followers_url", "TEXT", true, 0));
-        _columnsUser.put("following_url", new TableInfo.Column("following_url", "TEXT", true, 0));
-        _columnsUser.put("gists_url", new TableInfo.Column("gists_url", "TEXT", true, 0));
-        _columnsUser.put("starred_url", new TableInfo.Column("starred_url", "TEXT", true, 0));
-        _columnsUser.put("subscriptions_url", new TableInfo.Column("subscriptions_url", "TEXT", true, 0));
-        _columnsUser.put("organizations_url", new TableInfo.Column("organizations_url", "TEXT", true, 0));
-        _columnsUser.put("repos_url", new TableInfo.Column("repos_url", "TEXT", true, 0));
-        _columnsUser.put("events_url", new TableInfo.Column("events_url", "TEXT", true, 0));
-        _columnsUser.put("received_events_url", new TableInfo.Column("received_events_url", "TEXT", true, 0));
-        _columnsUser.put("type", new TableInfo.Column("type", "TEXT", true, 0));
-        _columnsUser.put("site_admin", new TableInfo.Column("site_admin", "INTEGER", true, 0));
-        final HashSet<TableInfo.ForeignKey> _foreignKeysUser = new HashSet<TableInfo.ForeignKey>(0);
-        final HashSet<TableInfo.Index> _indicesUser = new HashSet<TableInfo.Index>(0);
-        final TableInfo _infoUser = new TableInfo("user", _columnsUser, _foreignKeysUser, _indicesUser);
-        final TableInfo _existingUser = TableInfo.read(_db, "user");
-        if (! _infoUser.equals(_existingUser)) {
-          throw new IllegalStateException("Migration didn't properly handle user(com.piotr.xapo.model.User).\n"
-                  + " Expected:\n" + _infoUser + "\n"
-                  + " Found:\n" + _existingUser);
+        final HashMap<String, TableInfo.Column> _columnsRepository = new HashMap<String, TableInfo.Column>(9);
+        _columnsRepository.put("id", new TableInfo.Column("id", "INTEGER", true, 1));
+        _columnsRepository.put("author", new TableInfo.Column("author", "TEXT", true, 0));
+        _columnsRepository.put("name", new TableInfo.Column("name", "TEXT", true, 0));
+        _columnsRepository.put("url", new TableInfo.Column("url", "TEXT", true, 0));
+        _columnsRepository.put("description", new TableInfo.Column("description", "TEXT", true, 0));
+        _columnsRepository.put("language", new TableInfo.Column("language", "TEXT", true, 0));
+        _columnsRepository.put("stars", new TableInfo.Column("stars", "INTEGER", true, 0));
+        _columnsRepository.put("forks", new TableInfo.Column("forks", "INTEGER", true, 0));
+        _columnsRepository.put("currentPeriodStars", new TableInfo.Column("currentPeriodStars", "INTEGER", true, 0));
+        final HashSet<TableInfo.ForeignKey> _foreignKeysRepository = new HashSet<TableInfo.ForeignKey>(0);
+        final HashSet<TableInfo.Index> _indicesRepository = new HashSet<TableInfo.Index>(0);
+        final TableInfo _infoRepository = new TableInfo("repository", _columnsRepository, _foreignKeysRepository, _indicesRepository);
+        final TableInfo _existingRepository = TableInfo.read(_db, "repository");
+        if (! _infoRepository.equals(_existingRepository)) {
+          throw new IllegalStateException("Migration didn't properly handle repository(com.piotr.xapo.model.Repository).\n"
+                  + " Expected:\n" + _infoRepository + "\n"
+                  + " Found:\n" + _existingRepository);
         }
       }
-    }, "f81eb04041dd14a3ffad24080805df3e", "6aa42a5b395d8c32f1ee4036165750b9");
+    }, "c8a128f777f431784afad4353042f93a", "8418fb7920fc35240ab613bde1f3c71c");
     final SupportSQLiteOpenHelper.Configuration _sqliteConfig = SupportSQLiteOpenHelper.Configuration.builder(configuration.context)
         .name(configuration.name)
         .callback(_openCallback)
@@ -100,7 +91,7 @@ public class MyRoomDatabase_Impl extends MyRoomDatabase {
 
   @Override
   protected InvalidationTracker createInvalidationTracker() {
-    return new InvalidationTracker(this, "user");
+    return new InvalidationTracker(this, "repository");
   }
 
   @Override
@@ -109,7 +100,7 @@ public class MyRoomDatabase_Impl extends MyRoomDatabase {
     final SupportSQLiteDatabase _db = super.getOpenHelper().getWritableDatabase();
     try {
       super.beginTransaction();
-      _db.execSQL("DELETE FROM `user`");
+      _db.execSQL("DELETE FROM `repository`");
       super.setTransactionSuccessful();
     } finally {
       super.endTransaction();
@@ -121,15 +112,15 @@ public class MyRoomDatabase_Impl extends MyRoomDatabase {
   }
 
   @Override
-  public UserDao userDao() {
-    if (_userDao != null) {
-      return _userDao;
+  public RepositoryDao repositoryDao() {
+    if (_repositoryDao != null) {
+      return _repositoryDao;
     } else {
       synchronized(this) {
-        if(_userDao == null) {
-          _userDao = new UserDao_Impl(this);
+        if(_repositoryDao == null) {
+          _repositoryDao = new RepositoryDao_Impl(this);
         }
-        return _userDao;
+        return _repositoryDao;
       }
     }
   }

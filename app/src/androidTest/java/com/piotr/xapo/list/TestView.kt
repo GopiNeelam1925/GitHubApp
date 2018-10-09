@@ -3,7 +3,6 @@ package com.piotr.xapo.list
 import android.view.View
 import com.piotr.xapo.adapter.AdapterUsers
 import com.piotr.xapo.fragment.list.Contract
-import com.piotr.xapo.model.User
 
 public class TestView : Contract.View{
     override fun setAdapterData(users: List<User>) {

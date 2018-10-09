@@ -12,15 +12,15 @@ import android.support.v7.app.AppCompatActivity
 import android.support.v7.widget.DividerItemDecoration
 import android.support.v7.widget.RecyclerView
 import com.piotr.xapo.MyApplication
-import com.piotr.xapo.adapter.AdapterUsers
+import com.piotr.xapo.adapter.AdapterRepositorys
 import com.piotr.xapo.base.NavigationInterface
 import com.piotr.xapo.databinding.FragmentListBinding
-import com.piotr.xapo.model.User
+import com.piotr.xapo.model.Repository
 
 public class ListFragment : Fragment(), Contract.View {
 
     private lateinit var binding: FragmentListBinding
-    private val adapterUsers: AdapterUsers = AdapterUsers()
+    private val adapterRepositorys: AdapterRepositorys = AdapterRepositorys()
     @Inject
     lateinit var presenter: Contract.Presenter
     private var initialized = false
@@ -47,9 +47,9 @@ public class ListFragment : Fragment(), Contract.View {
         (activity as AppCompatActivity).setSupportActionBar(binding.toolbar)
         binding.recyclerview10.addItemDecoration(DividerItemDecoration(context, LinearLayoutManager.VERTICAL))
         binding.recyclerview10.layoutManager = LinearLayoutManager(context) as RecyclerView.LayoutManager
-        binding.recyclerview10.adapter = adapterUsers
-        adapterUsers.setOnItemClickListener(object : AdapterUsers.OnItemClickListener {
-            override fun onItemClick(position: Int, item: User, image: View) {
+        binding.recyclerview10.adapter = adapterRepositorys
+        adapterRepositorys.setOnItemClickListener(object : AdapterRepositorys.OnItemClickListener {
+            override fun onItemClick(position: Int, item: Repository, image: View) {
                 openDetailsScreen(item, image)
             }
         })
@@ -65,16 +65,16 @@ public class ListFragment : Fragment(), Contract.View {
 
     }
 
-    override fun setAdapterData(users: List<User>) {
-        adapterUsers.setData(users)
+    override fun setAdapterData(Repositorys: List<Repository>) {
+        adapterRepositorys.setData(Repositorys)
     }
 
-    override fun setAdapterOnClickListener(onClickListener: AdapterUsers.OnItemClickListener) {
-        adapterUsers.setOnItemClickListener(onItemClickListener = onClickListener)
+    override fun setAdapterOnClickListener(onClickListener: AdapterRepositorys.OnItemClickListener) {
+        adapterRepositorys.setOnItemClickListener(onItemClickListener = onClickListener)
     }
 
-    override fun openDetailsScreen(user: User, image: View) {
-        (activity as NavigationInterface).openDetailsFragment(user, image)
+    override fun openDetailsScreen(Repository: Repository, image: View) {
+        (activity as NavigationInterface).openDetailsFragment(Repository, image)
     }
 
     override fun hideProgress() {

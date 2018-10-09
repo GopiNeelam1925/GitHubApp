@@ -6,13 +6,13 @@ import com.piotr.xapo.R
 import com.piotr.xapo.base.NavigationInterface
 import com.piotr.xapo.fragment.details.DetailsFragment
 import com.piotr.xapo.fragment.list.ListFragment
-import com.piotr.xapo.model.User
 import android.os.Build
 import android.os.Bundle
 import android.transition.*
 import android.transition.TransitionSet.ORDERING_TOGETHER
 import android.view.Gravity
 import android.view.MenuItem
+import com.piotr.xapo.model.Repository
 
 
 class MainActivity : AppCompatActivity(), NavigationInterface {
@@ -52,10 +52,10 @@ class MainActivity : AppCompatActivity(), NavigationInterface {
         supportFragmentManager.beginTransaction().add(R.id.container, listFragment).commit()
     }
 
-    override fun openDetailsFragment(user: User, image: View) {
+    override fun openDetailsFragment(repository: Repository, image: View) {
         val details = DetailsFragment()
         var bundle = Bundle()
-        bundle.putSerializable("user", user)
+        bundle.putSerializable("repository", repository)
         details.arguments = bundle
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
             val detailsTransition = TransitionSet()
@@ -71,7 +71,7 @@ class MainActivity : AppCompatActivity(), NavigationInterface {
                 .replace(R.id.container, details)
                 .addToBackStack(null).commit()
         /*
-        I wanted to use JetPack Navigation but it doesnt support fragment shared element transitions yet.
+        JetPack Navigation doesnt support fragment shared element transitions yet.
 
         val extras = FragmentNavigatorExtras(image to "image")
         Navigation.findNavController(image).navigate(R.id.action_ListFragment_to_DetailsFragment,
