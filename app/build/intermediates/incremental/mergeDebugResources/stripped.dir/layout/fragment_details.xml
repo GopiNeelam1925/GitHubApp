@@ -14,6 +14,7 @@
 
 
     <android.support.design.widget.CoordinatorLayout
+        android:id="@+id/details_root"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@android:color/white" android:tag="layout/fragment_details_0" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
@@ -77,6 +78,7 @@
                     android:textSize="12sp" />
 
                 <TextView
+                    android:id="@+id/tv_author"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:padding="10dp"
@@ -93,15 +95,37 @@
                     android:layout_height="wrap_content"
                     android:paddingLeft="10dp"
                     android:paddingTop="10dp"
-                    android:text="url"
+                    android:text="description"
                     android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/tv_description"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:tag="binding_5"                 
+                    android:textSize="18sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/colorPrimary" />
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="10dp"
+                    android:text="url"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/tv_url"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
                     android:autoLink="web"
                     android:padding="10dp"
-                    android:tag="binding_5"         
+                    android:tag="binding_6"         
                     android:textSize="18sp" />
 
                 <View
@@ -119,11 +143,12 @@
                     android:textSize="12sp" />
 
                 <TextView
+                    android:id="@+id/tv_period_stars"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:autoLink="web"
                     android:padding="10dp"
-                    android:tag="binding_6"                                          
+                    android:tag="binding_7"                                          
                     android:textSize="18sp" />
 
                 <View
@@ -140,11 +165,12 @@
                     android:textSize="12sp" />
 
                 <TextView
+                    android:id="@+id/tv_forks"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:autoLink="web"
                     android:padding="10dp"
-                    android:tag="binding_7"                             
+                    android:tag="binding_8"                             
                     android:textSize="18sp" />
 
                 <View
@@ -161,27 +187,7 @@
                     android:textSize="12sp" />
 
                 <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:autoLink="web"
-                    android:padding="10dp"
-                    android:tag="binding_8"              
-                    android:textSize="18sp" />
-
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="1dp"
-                    android:background="@color/colorPrimary" />
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:paddingLeft="10dp"
-                    android:paddingTop="10dp"
-                    android:text="imageUrl"
-                    android:textSize="12sp" />
-
-                <TextView
+                    android:id="@+id/tv_language"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:autoLink="web"
@@ -199,15 +205,38 @@
                     android:layout_height="wrap_content"
                     android:paddingLeft="10dp"
                     android:paddingTop="10dp"
-                    android:text="stars"
+                    android:text="imageUrl"
                     android:textSize="12sp" />
 
                 <TextView
+                    android:id="@+id/tv_image_url"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:autoLink="web"
                     android:padding="10dp"
-                    android:tag="binding_10"                            
+                    android:tag="binding_10"             
+                    android:textSize="18sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/colorPrimary" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="10dp"
+                    android:text="stars"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/tv_stars"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:autoLink="web"
+                    android:padding="10dp"
+                    android:tag="binding_11"                            
                     android:textSize="18sp" />
 
 

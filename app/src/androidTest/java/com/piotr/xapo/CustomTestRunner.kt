@@ -12,7 +12,6 @@ public class CustomTestRunner : AndroidJUnitRunner() {
 
     @Throws(InstantiationException::class, IllegalAccessException::class, ClassNotFoundException::class)
     override fun newApplication(classLoader: ClassLoader, className: String, context: Context): Application {
-        // replace Application class with mock one
         return super.newApplication(classLoader, TestMyApplication::class.java.name, context)
     }
 

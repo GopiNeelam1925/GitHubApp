@@ -4,7 +4,7 @@
             "outputFile": "/home/piotr/develop/AndroidStudioProjects/GitHubApp/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v26/values-v26.xml",
             "map": [
                 {
-                    "source": "/home/piotr/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/3c10427313027703026e6ed69847bb18/res/values-v26/values-v26.xml",
+                    "source": "/home/piotr/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/c5ad029fbdd2f100cf46a50fc0367222/res/values-v26/values-v26.xml",
                     "from": {
                         "startLines": "2,3,4,8,12,16",
                         "startColumns": "4,4,4,4,4,4",
@@ -23,7 +23,7 @@
                     }
                 },
                 {
-                    "source": "/home/piotr/.gradle/caches/transforms-1/files-1.1/design-27.1.1.aar/cd6b13d7badc64f5dc0d507192c15201/res/values-v26/values-v26.xml",
+                    "source": "/home/piotr/.gradle/caches/transforms-1/files-1.1/design-27.1.1.aar/cf7a814aa53b883a81175495319f1029/res/values-v26/values-v26.xml",
                     "from": {
                         "startLines": "2,6",
                         "startColumns": "4,4",

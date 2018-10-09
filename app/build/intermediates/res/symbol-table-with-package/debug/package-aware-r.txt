@@ -836,6 +836,7 @@ id design_menu_item_action_area
 id design_menu_item_action_area_stub
 id design_menu_item_text
 id design_navigation_view
+id details_root
 id disableHome
 id edit_query
 id end
@@ -960,6 +961,15 @@ id transition_layout_save
 id transition_position
 id transition_scene_layoutid_cache
 id transition_transform
+id tv_author
+id tv_description
+id tv_forks
+id tv_image_url
+id tv_language
+id tv_name
+id tv_period_stars
+id tv_stars
+id tv_url
 id uniform
 id up
 id useLogo

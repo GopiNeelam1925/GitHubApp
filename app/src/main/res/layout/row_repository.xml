@@ -32,12 +32,14 @@
             android:orientation="vertical">
 
             <android.widget.TextView
+                android:id="@+id/tv_name"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@{repository.name}"
                 android:textStyle="bold" />
 
             <android.widget.TextView
+                android:id="@+id/tv_author"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@{repository.author}" />

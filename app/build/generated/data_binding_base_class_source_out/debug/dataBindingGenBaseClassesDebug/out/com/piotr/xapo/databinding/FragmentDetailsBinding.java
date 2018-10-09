@@ -8,10 +8,12 @@ import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.design.widget.AppBarLayout;
 import android.support.design.widget.CollapsingToolbarLayout;
+import android.support.design.widget.CoordinatorLayout;
 import android.support.v7.widget.Toolbar;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
 import com.piotr.xapo.model.Repository;
 import de.hdodenhof.circleimageview.CircleImageView;
 
@@ -23,22 +25,60 @@ public abstract class FragmentDetailsBinding extends ViewDataBinding {
   public final CollapsingToolbarLayout collapsing;
 
   @NonNull
+  public final CoordinatorLayout detailsRoot;
+
+  @NonNull
   public final CircleImageView ivProfile;
 
   @NonNull
   public final Toolbar toolbar;
+
+  @NonNull
+  public final TextView tvAuthor;
+
+  @NonNull
+  public final TextView tvDescription;
+
+  @NonNull
+  public final TextView tvForks;
+
+  @NonNull
+  public final TextView tvImageUrl;
+
+  @NonNull
+  public final TextView tvLanguage;
+
+  @NonNull
+  public final TextView tvPeriodStars;
+
+  @NonNull
+  public final TextView tvStars;
+
+  @NonNull
+  public final TextView tvUrl;
 
   @Bindable
   protected Repository mRepository;
 
   protected FragmentDetailsBinding(DataBindingComponent _bindingComponent, View _root,
       int _localFieldCount, AppBarLayout appbar, CollapsingToolbarLayout collapsing,
-      CircleImageView ivProfile, Toolbar toolbar) {
+      CoordinatorLayout detailsRoot, CircleImageView ivProfile, Toolbar toolbar, TextView tvAuthor,
+      TextView tvDescription, TextView tvForks, TextView tvImageUrl, TextView tvLanguage,
+      TextView tvPeriodStars, TextView tvStars, TextView tvUrl) {
     super(_bindingComponent, _root, _localFieldCount);
     this.appbar = appbar;
     this.collapsing = collapsing;
+    this.detailsRoot = detailsRoot;
     this.ivProfile = ivProfile;
     this.toolbar = toolbar;
+    this.tvAuthor = tvAuthor;
+    this.tvDescription = tvDescription;
+    this.tvForks = tvForks;
+    this.tvImageUrl = tvImageUrl;
+    this.tvLanguage = tvLanguage;
+    this.tvPeriodStars = tvPeriodStars;
+    this.tvStars = tvStars;
+    this.tvUrl = tvUrl;
   }
 
   public abstract void setRepository(@Nullable Repository repository);

@@ -1,4 +1,4 @@
-#Tue Oct 09 15:27:49 CEST 2018
+#Tue Oct 09 20:09:57 CEST 2018
 base.0=/home/piotr/develop/AndroidStudioProjects/GitHubApp/app/build/intermediates/transforms/dexMerger/androidTest/debug/0
 path.0=classes.dex
 renamed.0=classes.dex

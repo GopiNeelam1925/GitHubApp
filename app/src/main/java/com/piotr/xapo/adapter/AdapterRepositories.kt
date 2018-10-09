@@ -10,7 +10,7 @@ import android.widget.ImageView
 import com.piotr.xapo.databinding.RowRepositoryBinding
 import com.piotr.xapo.model.Repository
 
-public class AdapterRepositorys : RecyclerView.Adapter<AdapterRepositorys.AdapterViewHolder>() {
+public class AdapterRepositories : RecyclerView.Adapter<AdapterRepositories.AdapterViewHolder>() {
 
     private var onItemClickListener: OnItemClickListener? = null
     private var data: MutableList<Repository> = ArrayList()

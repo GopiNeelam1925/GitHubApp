@@ -1,7 +1,6 @@
 package com.piotr.xapo
 
 import com.piotr.xapo.di.ApplicationComponent
-import com.piotr.xapo.di.ApplicationModule
 import com.piotr.xapo.di.DaggerApplicationComponent
 
 /**

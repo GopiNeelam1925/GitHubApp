@@ -14,59 +14,45 @@ public class FragmentDetailsBindingImpl extends FragmentDetailsBinding  {
     static {
         sIncludes = null;
         sViewsWithIds = new android.util.SparseIntArray();
-        sViewsWithIds.put(R.id.appbar, 11);
+        sViewsWithIds.put(R.id.appbar, 12);
     }
     // views
-    @NonNull
-    private final android.support.design.widget.CoordinatorLayout mboundView0;
-    @NonNull
-    private final android.widget.TextView mboundView10;
-    @NonNull
-    private final android.widget.TextView mboundView4;
-    @NonNull
-    private final android.widget.TextView mboundView5;
-    @NonNull
-    private final android.widget.TextView mboundView6;
-    @NonNull
-    private final android.widget.TextView mboundView7;
-    @NonNull
-    private final android.widget.TextView mboundView8;
-    @NonNull
-    private final android.widget.TextView mboundView9;
     // variables
     // values
     // listeners
     // Inverse Binding Event Handlers
 
     public FragmentDetailsBindingImpl(@Nullable android.databinding.DataBindingComponent bindingComponent, @NonNull View root) {
-        this(bindingComponent, root, mapBindings(bindingComponent, root, 12, sIncludes, sViewsWithIds));
+        this(bindingComponent, root, mapBindings(bindingComponent, root, 13, sIncludes, sViewsWithIds));
     }
     private FragmentDetailsBindingImpl(android.databinding.DataBindingComponent bindingComponent, View root, Object[] bindings) {
         super(bindingComponent, root, 0
-            , (android.support.design.widget.AppBarLayout) bindings[11]
+            , (android.support.design.widget.AppBarLayout) bindings[12]
             , (android.support.design.widget.CollapsingToolbarLayout) bindings[1]
+            , (android.support.design.widget.CoordinatorLayout) bindings[0]
             , (de.hdodenhof.circleimageview.CircleImageView) bindings[2]
             , (android.support.v7.widget.Toolbar) bindings[3]
+            , (android.widget.TextView) bindings[4]
+            , (android.widget.TextView) bindings[5]
+            , (android.widget.TextView) bindings[8]
+            , (android.widget.TextView) bindings[10]
+            , (android.widget.TextView) bindings[9]
+            , (android.widget.TextView) bindings[7]
+            , (android.widget.TextView) bindings[11]
+            , (android.widget.TextView) bindings[6]
             );
         this.collapsing.setTag(null);
+        this.detailsRoot.setTag(null);
         this.ivProfile.setTag(null);
-        this.mboundView0 = (android.support.design.widget.CoordinatorLayout) bindings[0];
-        this.mboundView0.setTag(null);
-        this.mboundView10 = (android.widget.TextView) bindings[10];
-        this.mboundView10.setTag(null);
-        this.mboundView4 = (android.widget.TextView) bindings[4];
-        this.mboundView4.setTag(null);
-        this.mboundView5 = (android.widget.TextView) bindings[5];
-        this.mboundView5.setTag(null);
-        this.mboundView6 = (android.widget.TextView) bindings[6];
-        this.mboundView6.setTag(null);
-        this.mboundView7 = (android.widget.TextView) bindings[7];
-        this.mboundView7.setTag(null);
-        this.mboundView8 = (android.widget.TextView) bindings[8];
-        this.mboundView8.setTag(null);
-        this.mboundView9 = (android.widget.TextView) bindings[9];
-        this.mboundView9.setTag(null);
         this.toolbar.setTag(null);
+        this.tvAuthor.setTag(null);
+        this.tvDescription.setTag(null);
+        this.tvForks.setTag(null);
+        this.tvImageUrl.setTag(null);
+        this.tvLanguage.setTag(null);
+        this.tvPeriodStars.setTag(null);
+        this.tvStars.setTag(null);
+        this.tvUrl.setTag(null);
         setRootTag(root);
         // listeners
         invalidateAll();
@@ -135,6 +121,7 @@ public class FragmentDetailsBindingImpl extends FragmentDetailsBinding  {
         java.lang.String repositoryImageUrl = null;
         java.lang.String repositoryName = null;
         java.lang.String integerToStringRepositoryForks = null;
+        java.lang.String repositoryDescription = null;
         java.lang.String repositoryLanguage = null;
         int repositoryForks = 0;
 
@@ -155,6 +142,8 @@ public class FragmentDetailsBindingImpl extends FragmentDetailsBinding  {
                     repositoryImageUrl = repository.getImageUrl();
                     // read repository.name
                     repositoryName = repository.getName();
+                    // read repository.description
+                    repositoryDescription = repository.getDescription();
                     // read repository.language
                     repositoryLanguage = repository.getLanguage();
                     // read repository.forks
@@ -175,14 +164,15 @@ public class FragmentDetailsBindingImpl extends FragmentDetailsBinding  {
 
             this.collapsing.setTitle(repositoryName);
             com.piotr.xapo.Utils.ImageBindingAdapter.setImageUrl(this.ivProfile, repositoryImageUrl);
-            android.databinding.adapters.TextViewBindingAdapter.setText(this.mboundView10, integerToStringRepositoryStars);
-            android.databinding.adapters.TextViewBindingAdapter.setText(this.mboundView4, repositoryAuthor);
-            android.databinding.adapters.TextViewBindingAdapter.setText(this.mboundView5, repositoryUrl);
-            android.databinding.adapters.TextViewBindingAdapter.setText(this.mboundView6, integerToStringRepositoryCurrentPeriodStars);
-            android.databinding.adapters.TextViewBindingAdapter.setText(this.mboundView7, integerToStringRepositoryForks);
-            android.databinding.adapters.TextViewBindingAdapter.setText(this.mboundView8, repositoryLanguage);
-            android.databinding.adapters.TextViewBindingAdapter.setText(this.mboundView9, repositoryImageUrl);
             this.toolbar.setTitle(repositoryName);
+            android.databinding.adapters.TextViewBindingAdapter.setText(this.tvAuthor, repositoryAuthor);
+            android.databinding.adapters.TextViewBindingAdapter.setText(this.tvDescription, repositoryDescription);
+            android.databinding.adapters.TextViewBindingAdapter.setText(this.tvForks, integerToStringRepositoryForks);
+            android.databinding.adapters.TextViewBindingAdapter.setText(this.tvImageUrl, repositoryImageUrl);
+            android.databinding.adapters.TextViewBindingAdapter.setText(this.tvLanguage, repositoryLanguage);
+            android.databinding.adapters.TextViewBindingAdapter.setText(this.tvPeriodStars, integerToStringRepositoryCurrentPeriodStars);
+            android.databinding.adapters.TextViewBindingAdapter.setText(this.tvStars, integerToStringRepositoryStars);
+            android.databinding.adapters.TextViewBindingAdapter.setText(this.tvUrl, repositoryUrl);
         }
     }
     // Listener Stub Implementations

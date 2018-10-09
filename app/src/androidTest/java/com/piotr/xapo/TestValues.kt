@@ -5,7 +5,7 @@ import com.google.gson.reflect.TypeToken
 import com.piotr.xapo.model.Repository
 
 object TestValues {
-    val testResponse: String = "[{  \n" +
+    private const val testResponse: String = "[{  \n" +
             "      \"author\":\"saket\",\n" +
             "      \"name\":\"FluidKeyboardResize\",\n" +
             "      \"url\":\"https://github.com/saket/FluidKeyboardResize\",\n" +
@@ -38,7 +38,7 @@ object TestValues {
 
 
     fun getTestRepositories(): List<Repository> {
-        val RepositorysType = object : TypeToken<List<Repository>>() {}.type
-        return Gson().fromJson<List<Repository>>(testResponse, RepositorysType)
+        val repositoriesType = object : TypeToken<List<Repository>>() {}.type
+        return Gson().fromJson<List<Repository>>(testResponse, repositoriesType)
     }
 }
